@@ -4,6 +4,14 @@
 
 #macro CAM_SCALE 2
 
+
+
+player_black = instance_create_layer(-10, -10, "Instances", o_player);
+player_white = instance_create_layer(-20, -10, "Instances", o_player);
+
+current_player = player_black;
+
+
 camera = camera_create_view(0, 0, CAM_W, CAM_H);
 
 window_set_size(CAM_W * CAM_SCALE, CAM_H * CAM_SCALE);

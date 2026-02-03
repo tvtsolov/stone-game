@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_game_manager",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"o_stone_black",
+  "eventList":[],
   "managed":true,
-  "name":"o_game_manager",
+  "name":"o_stone_black",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_stone",
+    "path":"sprites/s_stone/s_stone.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

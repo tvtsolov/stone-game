@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_game_manager",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"o_stone_white",
+  "eventList":[],
   "managed":true,
-  "name":"o_game_manager",
+  "name":"o_stone_white",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_stone_1",
+    "path":"sprites/s_stone_1/s_stone_1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
