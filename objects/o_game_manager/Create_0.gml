@@ -6,6 +6,8 @@
 
 
 
+
+
 player_black = instance_create_layer(-10, -10, "Instances", o_player);
 player_white = instance_create_layer(-20, -10, "Instances", o_player);
 
@@ -27,3 +29,8 @@ window_set_position(display_width div 2 - window_width div 2, display_height div
 display_set_gui_size(CAM_W , CAM_H );
 
 view_set_camera(0, camera);
+
+
+board_size = 9;
+board = noone;
+global.board_array = noone;

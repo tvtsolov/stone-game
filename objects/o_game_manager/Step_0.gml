@@ -9,6 +9,4 @@ if mouse_check_button_pressed(mb_left){
 		field_.has_stone = true;
 	}
 	
-	
-	
 }
