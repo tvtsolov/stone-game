@@ -30,6 +30,7 @@
     {"id":{"name":"o_stone_white","path":"objects/o_stone_white/o_stone_white.yy",},},
     {"id":{"name":"Board","path":"rooms/Board/Board.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"id":{"name":"check_board","path":"scripts/check_board/check_board.yy",},},
     {"id":{"name":"create_board","path":"scripts/create_board/create_board.yy",},},
     {"id":{"name":"s_board","path":"sprites/s_board/s_board.yy",},},
     {"id":{"name":"s_field","path":"sprites/s_field/s_field.yy",},},

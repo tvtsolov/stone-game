@@ -1,3 +1,5 @@
+#macro FIELD global.board_array
+#macro GROUPS global.groups
 
 #macro CAM_W 400
 #macro CAM_H 400
@@ -6,6 +8,10 @@
 
 
 
+enum color_type {
+	black, 
+	white	
+}
 
 
 player_black = instance_create_layer(-10, -10, "Instances", o_player);
@@ -32,5 +38,33 @@ view_set_camera(0, camera);
 
 
 board_size = 9;
-board = noone;
 global.board_array = noone;
+
+
+//>>>>>>>>>>>GROUPS<<<<<<<<<<<//
+
+global.groups = array_create(0);
+
+function group(_fields, _color) constructor 
+{
+	color_		= _color;
+	fields_		= _fields;
+	//edges = find_edges(fields);
+}
+
+
+
+
+
+/*
+FIELD props:
+stone = noone;
+row = -1;
+col = -1;
+
+STONE props:
+object type/color
+*/
+
+
+
