@@ -13,14 +13,7 @@ if array_length(GROUPS) == 0 {
 //make a group of one stone
 		
 	make_1stone_group(placed_stone, played_field);
-	//var color_type = placed_stone.object_index = o_stone_black ? color_type.black : color_type.white;
-		
-	//var group_fields = array_create(1, played_field);
-	//var gr = new group(group_fields, color_type); // make a struct from the array
-	//if !array_contains(GROUPS, gr){
-	//	array_push(GROUPS, gr);
-	//}
-	//placed_stone.group_ = gr;
+
 		
 } else {
 	
@@ -52,6 +45,8 @@ if array_length(GROUPS) == 0 {
 			if neighbor_stone.color_ == placed_stone.color_ {
 				// get group
 				var neighbor_groupUP = neighbor_stone.group_;
+				
+				//check if goup is a duplicate ? needed? not yet, this is the first check
 				array_push(neighbor_groups, neighbor_groupUP);
 			}
 		}
@@ -60,7 +55,11 @@ if array_length(GROUPS) == 0 {
 			if neighbor_stone.color_ == placed_stone.color_ {
 				// get group
 				var neighbor_groupRIGHT = neighbor_stone.group_;
-				array_push(neighbor_groups, neighbor_groupRIGHT);
+				
+				//check if goup is a duplicate
+				if !array_contains(neighbor_groups,neighbor_groupRIGHT) {
+					array_push(neighbor_groups, neighbor_groupRIGHT);
+				}
 			}
 		}
 		if down_field != noone and down_field.stone != noone {
@@ -68,7 +67,11 @@ if array_length(GROUPS) == 0 {
 			if neighbor_stone.color_ == placed_stone.color_ {
 				// get group
 				var neighbor_groupDOWN = neighbor_stone.group_;
-				array_push(neighbor_groups, neighbor_groupDOWN);
+				
+				//check if goup is a duplicate
+				if !array_contains(neighbor_groups,neighbor_groupDOWN) {
+					array_push(neighbor_groups, neighbor_groupDOWN);
+				}
 			}
 		}
 		if left_field != noone and left_field.stone!= noone {
@@ -76,7 +79,11 @@ if array_length(GROUPS) == 0 {
 			if neighbor_stone.color_ == placed_stone.color_ {
 				// get group
 				var neighbor_groupLEFT = neighbor_stone.group_;
-				array_push(neighbor_groups, neighbor_groupLEFT);
+				
+				//check if goup is a duplicate
+				if !array_contains(neighbor_groups, neighbor_groupLEFT){
+					array_push(neighbor_groups, neighbor_groupLEFT);
+				}
 			}
 		}
 		// deal with the neighboring goups here:
