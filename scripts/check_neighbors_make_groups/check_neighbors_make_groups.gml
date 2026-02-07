@@ -7,6 +7,7 @@ var right_field		= noone;
 var down_field			= noone;
 var left_field			= noone;
 	
+	
 if array_length(GROUPS) == 0 {
 		
 //make a group of one stone
@@ -45,7 +46,8 @@ if array_length(GROUPS) == 0 {
 		} 
 
 	
-		if up_field.stone != noone and up_field != noone {
+		if up_field != noone and 
+		up_field.stone != noone   {
 			var neighbor_stone = up_field.stone;
 			if neighbor_stone.color_ == placed_stone.color_ {
 				// get group
@@ -78,9 +80,23 @@ if array_length(GROUPS) == 0 {
 			}
 		}
 		// deal with the neighboring goups here:
-		if array_length(neighbor_groups) == 0 {
+		var neighbors_count = array_length(neighbor_groups);
+		if neighbors_count == 0 {
 			make_1stone_group(placed_stone, played_field);
-			
+		} else if neighbors_count == 1 {
+			add_field_to_group(played_field,neighbor_groups[0]);
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+

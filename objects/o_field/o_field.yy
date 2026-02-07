@@ -34,5 +34,5 @@
     "path":"sprites/s_field/s_field.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

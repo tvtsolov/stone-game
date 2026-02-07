@@ -31,7 +31,7 @@
     {"id":{"name":"o_stone","path":"objects/o_stone/o_stone.yy",},},
     {"id":{"name":"Board","path":"rooms/Board/Board.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
-    {"id":{"name":"add_stone_to_group","path":"scripts/add_stone_to_group/add_stone_to_group.yy",},},
+    {"id":{"name":"add_field_to_group","path":"scripts/add_field_to_group/add_field_to_group.yy",},},
     {"id":{"name":"check_board","path":"scripts/check_board/check_board.yy",},},
     {"id":{"name":"check_neighbors_make_groups","path":"scripts/check_neighbors_make_groups/check_neighbors_make_groups.yy",},},
     {"id":{"name":"create_board","path":"scripts/create_board/create_board.yy",},},
