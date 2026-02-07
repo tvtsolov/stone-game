@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"merge_groups","order":1,"path":"scripts/merge_groups/merge_groups.yy",},
+  ],
 }
