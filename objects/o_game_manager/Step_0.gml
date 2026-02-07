@@ -1,13 +1,13 @@
 if mouse_check_button_pressed(mb_left){
-	var field_ = collision_point(mouse_x, mouse_y,o_field, false, true);
+	var played_field = collision_point(mouse_x, mouse_y,o_field, false, true);
 	
-	if field_ != noone and field_.stone = noone
+	if played_field != noone and played_field.stone = noone
 	{
 		var stone_ =  current_player = player_black ? o_stone_black : o_stone_white;
-		instance_create_layer(field_.x, field_.y, "Instances", stone_)
+		instance_create_layer(played_field.x, played_field.y, "Instances", stone_)
 		current_player = (current_player = player_black) ? player_white : player_black;
-		field_.stone = stone_;
-		check_board(stone_, field_);
+		played_field.stone = stone_;
+		check_board(stone_, played_field);
 	}
 	
 }
