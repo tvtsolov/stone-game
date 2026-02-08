@@ -37,6 +37,8 @@
     {"id":{"name":"create_board","path":"scripts/create_board/create_board.yy",},},
     {"id":{"name":"make_1stone_group","path":"scripts/make_1stone_group/make_1stone_group.yy",},},
     {"id":{"name":"merge_groups","path":"scripts/merge_groups/merge_groups.yy",},},
+    {"id":{"name":"update_stones_group_refs_in_array","path":"scripts/update_stones_group_refs_in_array/update_stones_group_refs_in_array.yy",},},
+    {"id":{"name":"update_stones_group_refs_in_group","path":"scripts/update_stones_group_refs_in_group/update_stones_group_refs_in_group.yy",},},
     {"id":{"name":"s_board","path":"sprites/s_board/s_board.yy",},},
     {"id":{"name":"s_field","path":"sprites/s_field/s_field.yy",},},
     {"id":{"name":"s_stone_1","path":"sprites/s_stone_1/s_stone_1.yy",},},
