@@ -53,9 +53,6 @@ function group(_fields, _color) constructor
 }
 
 
-
-
-
 /*
 FIELD props:
 stone = noone;
