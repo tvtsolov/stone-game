@@ -7,7 +7,9 @@ function merge_groups(groups_to_merge, played_field){
 	// add the stone to the big group
 	
 	var ar_size_groups_to_merge = array_length(groups_to_merge);
-	var first_group = groups_to_merge[0];
+	//var first_group = groups_to_merge[0];
+	var first_group = variable_clone(groups_to_merge[0]);
+	update_stones_group_refs_in_array(first_group, first_group.fields_)
 	
 	//update_stones_group_refs_in_group(first_group, new_array_groups);
 	
@@ -17,18 +19,18 @@ function merge_groups(groups_to_merge, played_field){
 	}
 	
 	var GROUPSsize = array_length(GROUPS);
-	var new_array_groups = array_create(0);
+	var index_array = array_create(0);
 	
-	for (var i = 0; i < GROUPSsize; ++i) {
-		for (var ii = 1; ii < ar_size_groups_to_merge; ++ii) {
-			if !array_contains(groups_to_merge, GROUPS[i]){
-				array_push(new_array_groups,GROUPS[i]);
-			}
+	for (var i = 0; i < ar_size_groups_to_merge; ++i) {
+		var index = array_get_index(GROUPS, groups_to_merge[i]);
+		if index != -1 {
+			array_delete(GROUPS, index, 1);
 		}
 	}
-	add_field_to_group(played_field, first_group);
 	
-	GROUPS = new_array_groups;
+	// remove the groups that are redundant from GROUPS
+		
+	add_field_to_group(played_field, first_group);
 	array_push(GROUPS, first_group);
 }
 
