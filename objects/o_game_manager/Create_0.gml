@@ -49,7 +49,7 @@ function group(_fields, _color) constructor
 {
 	color_		= _color;
 	fields_		= _fields;
-	//edges = find_edges(fields);
+	
 }
 
 

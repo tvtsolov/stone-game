@@ -8,6 +8,7 @@ if mouse_check_button_pressed(mb_left){
 		current_player = (current_player = player_black) ? player_white : player_black;
 		played_field.stone = stone_;
 		check_board(stone_, played_field);
+		
 	}
 	
 }

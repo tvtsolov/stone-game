@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"check_surrounded_and_remove","order":4,"path":"scripts/check_surrounded_and_remove/check_surrounded_and_remove.yy",},
     {"name":"merge_groups","order":1,"path":"scripts/merge_groups/merge_groups.yy",},
     {"name":"update_stones_group_refs_in_array","order":3,"path":"scripts/update_stones_group_refs_in_array/update_stones_group_refs_in_array.yy",},
     {"name":"update_stones_group_refs_in_group","order":2,"path":"scripts/update_stones_group_refs_in_group/update_stones_group_refs_in_group.yy",},
