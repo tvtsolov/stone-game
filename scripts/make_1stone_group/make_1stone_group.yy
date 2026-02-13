@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"make_1stone_group",
   "parent":{
-    "name":"stone game",
-    "path":"stone game.yyp",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,3 +1,5 @@
+randomise();
+
 if room = Board {
 	global.board_array = array_create(9);
 	var i = 0;

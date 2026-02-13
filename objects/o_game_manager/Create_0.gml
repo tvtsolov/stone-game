@@ -5,7 +5,7 @@
 #macro CAM_H 400
 
 #macro CAM_SCALE 2
-
+#macro SOUNDS global.sounds
 
 
 enum color_type {
@@ -52,6 +52,7 @@ function group(_fields, _color) constructor
 	
 }
 
+create_sounds();
 
 /*
 FIELD props:
@@ -62,6 +63,10 @@ col = -1;
 STONE props:
 object type/color
 */
+
+
+
+
 
 
 

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"check_board",
   "parent":{
-    "name":"stone game",
-    "path":"stone game.yyp",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

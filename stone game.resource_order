@@ -1,10 +1,23 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Sounds","order":7,"path":"folders/Sounds.yy",},
+    {"name":"Scripts","order":6,"path":"folders/Scripts.yy",},
+  ],
   "ResourceOrderSettings":[
-    {"name":"check_surrounded_and_remove","order":4,"path":"scripts/check_surrounded_and_remove/check_surrounded_and_remove.yy",},
+    {"name":"check_board","order":1,"path":"scripts/check_board/check_board.yy",},
+    {"name":"check_neighbors_make_groups","order":2,"path":"scripts/check_neighbors_make_groups/check_neighbors_make_groups.yy",},
+    {"name":"check_surrounded_and_remove","order":3,"path":"scripts/check_surrounded_and_remove/check_surrounded_and_remove.yy",},
+    {"name":"create_board","order":4,"path":"scripts/create_board/create_board.yy",},
+    {"name":"create_sounds","order":11,"path":"scripts/create_sounds/create_sounds.yy",},
     {"name":"get_group_neighbors","order":5,"path":"scripts/get_group_neighbors/get_group_neighbors.yy",},
-    {"name":"merge_groups","order":1,"path":"scripts/merge_groups/merge_groups.yy",},
-    {"name":"update_stones_group_refs_in_array","order":3,"path":"scripts/update_stones_group_refs_in_array/update_stones_group_refs_in_array.yy",},
-    {"name":"update_stones_group_refs_in_group","order":2,"path":"scripts/update_stones_group_refs_in_group/update_stones_group_refs_in_group.yy",},
+    {"name":"make_1stone_group","order":6,"path":"scripts/make_1stone_group/make_1stone_group.yy",},
+    {"name":"merge_groups","order":7,"path":"scripts/merge_groups/merge_groups.yy",},
+    {"name":"run_sounds","order":10,"path":"scripts/run_sounds/run_sounds.yy",},
+    {"name":"update_stones_group_refs_in_array","order":8,"path":"scripts/update_stones_group_refs_in_array/update_stones_group_refs_in_array.yy",},
+    {"name":"update_stones_group_refs_in_group","order":9,"path":"scripts/update_stones_group_refs_in_group/update_stones_group_refs_in_group.yy",},
+    {"name":"snd_stone1_1","order":1,"path":"sounds/snd_stone1_1/snd_stone1_1.yy",},
+    {"name":"snd_stone1_2","order":2,"path":"sounds/snd_stone1_2/snd_stone1_2.yy",},
+    {"name":"snd_stone1_3","order":3,"path":"sounds/snd_stone1_3/snd_stone1_3.yy",},
+    {"name":"snd_stone1_4","order":4,"path":"sounds/snd_stone1_4/snd_stone1_4.yy",},
   ],
 }

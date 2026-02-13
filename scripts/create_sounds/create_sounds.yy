@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"update_stones_group_refs_in_group",
+  "%Name":"create_sounds",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"update_stones_group_refs_in_group",
+  "name":"create_sounds",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
