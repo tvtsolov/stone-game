@@ -10,14 +10,16 @@ function check_surrounded_and_remove(groups_to_check = undefined){
 	var groups_indices_to_remove = array_create(0);
 
 	// check all groups if surrounded
-	for (var i = 0; i < size; ++i) {
-	    
+for (var i = 0; i < size; ++i) {
 		 var group_current = grps[i];
 		 var group_color = group_current.color_;
 		 var fields = group_current.fields_;
 		 var fields_count = array_length(fields);
-		 
+		 var is_surrounded = true;
 		 //check all edges for the current group
+		 
+#region ******FIELD CHECK******
+
 		 for (var ii = 0; ii < fields_count; ++ii) {
 			 var field = fields[ii];
 				if field.row > 0 {
@@ -28,9 +30,12 @@ function check_surrounded_and_remove(groups_to_check = undefined){
 							//same color, same group; 
 						}
 					} else {
-						//empty field; 
+						//empty field;
+						is_surrounded = false;
 						break;
 					}
+				} else {
+					//edge field;
 				}
 				if field.col < 8 {
 					//-------------------RIGHT exists
@@ -41,11 +46,11 @@ function check_surrounded_and_remove(groups_to_check = undefined){
 						}
 					} else {
 						//empty field; 
+						is_surrounded = false;
 						break;
 					}
 				} else {
-					//empty field; 
-					break;
+					//edge field;
 				}
 				if field.row < 8 {
 					//-------------------DOWN exists
@@ -55,13 +60,13 @@ function check_surrounded_and_remove(groups_to_check = undefined){
 							//same color, same group; 
 						}
 					} else {
-						//empty field; group is not surrounded
+						//empty field; 
+						is_surrounded = false;
 						break;
 					}
 				} else {
-					//end of the board
+					//edge
 				}
-				
 				if field.col > 0 {
 					//-------------------LEFT exists
 					var stone = FIELD[field.row][field.col-1].stone;
@@ -71,14 +76,22 @@ function check_surrounded_and_remove(groups_to_check = undefined){
 						}
 					} else {
 						//empty field; 
+						is_surrounded = false;
 						break;
 					}
-					
 				} else {
-					//empty field; break?
+					//edge field
 				}
-			array_push(groups_indices_to_remove, i);
 		 }
+#endregion ******FIELD CHECK******
+		//ALL FIELDS HAVE BEEN SCANNED
+		
+		if is_surrounded {
+			array_push(groups_indices_to_remove, i);
+		}
+		
+
+
 	}
 	
 	// remove duplicates

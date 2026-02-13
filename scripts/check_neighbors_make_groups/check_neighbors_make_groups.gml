@@ -93,10 +93,8 @@ if array_length(GROUPS) == 0 {
 		} else if neighbors_count == 1 {
 			add_field_to_group(played_field,neighbor_groups[0]);
 		} else {
-			merge_groups(neighbor_groups, played_field);
+			merge_groups(neighbor_groups, played_field); // returns the last created group
 		}
-		
-		
 	}
 }
 

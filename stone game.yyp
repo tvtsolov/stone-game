@@ -36,6 +36,7 @@
     {"id":{"name":"check_neighbors_make_groups","path":"scripts/check_neighbors_make_groups/check_neighbors_make_groups.yy",},},
     {"id":{"name":"check_surrounded_and_remove","path":"scripts/check_surrounded_and_remove/check_surrounded_and_remove.yy",},},
     {"id":{"name":"create_board","path":"scripts/create_board/create_board.yy",},},
+    {"id":{"name":"get_group_neighbors","path":"scripts/get_group_neighbors/get_group_neighbors.yy",},},
     {"id":{"name":"make_1stone_group","path":"scripts/make_1stone_group/make_1stone_group.yy",},},
     {"id":{"name":"merge_groups","path":"scripts/merge_groups/merge_groups.yy",},},
     {"id":{"name":"update_stones_group_refs_in_array","path":"scripts/update_stones_group_refs_in_array/update_stones_group_refs_in_array.yy",},},
