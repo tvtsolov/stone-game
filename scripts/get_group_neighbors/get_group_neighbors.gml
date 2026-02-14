@@ -1,7 +1,11 @@
-function get_field_neighbor_groups(field_){
+function get_field_neighbor_groups(field_, same){
 	
 	var neighbors = array_create(0);
 	var played_field_color = field_.stone.color_;
+	
+	if same {
+		played_field_color = played_field_color == 0 ? 1 : 0;
+	}
 	
 	var played_row	= field_.row;
 	var played_col	= field_.col;

@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings":[
-    {"name":"Sounds","order":7,"path":"folders/Sounds.yy",},
     {"name":"Scripts","order":6,"path":"folders/Scripts.yy",},
+    {"name":"Sounds","order":7,"path":"folders/Sounds.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"check_board","order":1,"path":"scripts/check_board/check_board.yy",},

@@ -9,7 +9,7 @@ function check_board(_stone, played_field){
 	// TODO forbid move that will make the whole new group surrounded/ maybe add forbiden fields based on this?
 	// maybe just check self first always and if 
 	// TODO need to add forbiden fields / atari
-	var neighbor_groups = get_field_neighbor_groups(played_field);
+	var neighbor_groups = get_field_neighbor_groups(played_field, false);
 	check_surrounded_and_remove(neighbor_groups);
 	
 }

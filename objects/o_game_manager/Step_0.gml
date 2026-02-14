@@ -1,6 +1,7 @@
 if mouse_check_button_pressed(mb_left){
 	var played_field = collision_point(mouse_x, mouse_y,o_field, false, true);
 	
+
 	if played_field != noone and played_field.stone = noone
 	{
 		var stone_type =  current_player = player_black ? o_stone_black : o_stone_white;

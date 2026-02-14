@@ -87,32 +87,43 @@ for (var i = 0; i < size; ++i) {
 		//ALL FIELDS HAVE BEEN SCANNED
 		
 		if is_surrounded {
-			array_push(groups_indices_to_remove, i);
+			//find the index of this group in the GROUPS array
+			
+			temp_target = grps[i];
+			var gr_indx = array_find_index(GROUPS, function(_e, _i)
+			{
+			    return _e == temp_target;
+			});
+			
+			//for debuging
+			if gr_indx = -1{
+				var test = 325;	
+			}
+			array_push(groups_indices_to_remove, gr_indx);
 		}
-		
-
-
 	}
 	
 	// remove duplicates
-	groups_indices_to_remove = array_unique(groups_indices_to_remove);
+	// groups_indices_to_remove = array_unique(groups_indices_to_remove); // already checked for duplicates when adding them above
+	
 	// remove groups that are surrounded
 	
 	var groups_to_remove_num = array_length(groups_indices_to_remove);
 	for (var p = 0; p < groups_to_remove_num; ++p) {
 		var index = groups_indices_to_remove[p];
-	   var num_of_fields_to_free = array_length(grps[index].fields_);
+		
+	   var num_of_fields_to_free = array_length(GROUPS[index].fields_);
 		
 		for (var ii = 0; ii < num_of_fields_to_free; ++ii) {
-			var fld_to_empty = grps[index].fields_[ii];
+			var fld_to_empty = GROUPS[index].fields_[ii];
 			with (fld_to_empty.stone) {
 				instance_destroy();	
 			}
 			fld_to_empty.stone = noone;
 	}
 		
-	delete grps[index];
-	array_delete(grps, index, 1);
+	//delete GROUPS[index];
+	array_delete(GROUPS, index, 1);
 			
 	}
 	

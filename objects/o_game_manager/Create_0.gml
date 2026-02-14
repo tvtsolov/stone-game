@@ -13,6 +13,7 @@ enum color_type {
 	white	
 }
 
+temp_target = -1;
 
 player_black = instance_create_layer(-10, -10, "Instances", o_player);
 player_white = instance_create_layer(-20, -10, "Instances", o_player);
