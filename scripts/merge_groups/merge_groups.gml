@@ -19,9 +19,9 @@ function merge_groups(groups_to_merge, played_field){
 	var index_array = array_create(0);
 	var newGROUPS = array_create(0);
 	
-	for (var i = 0; i < ar_size_groups_to_merge; ++i) {
-		var index = array_get_index(GROUPS, groups_to_merge[i]);
-		if index != -1 {
+	for (var i = 0; i < GROUPSsize; ++i) {
+		var index = array_get_index( groups_to_merge, GROUPS[i] ); //check if the element is one of the new groups
+		if index == -1 {														 //if not there, add it to the new array
 			array_push(newGROUPS, GROUPS[i]);
 		}
 	}	
