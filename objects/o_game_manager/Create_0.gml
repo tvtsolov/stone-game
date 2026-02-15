@@ -1,11 +1,10 @@
-#macro FIELD global.board_array
-#macro GROUPS global.groups
-
 #macro CAM_W 400
 #macro CAM_H 400
-
 #macro CAM_SCALE 2
 #macro SOUNDS global.sounds
+#macro STATES global.board_states
+#macro FIELD global.board_array
+#macro GROUPS global.groups
 
 
 enum color_type {
@@ -15,8 +14,12 @@ enum color_type {
 
 temp_target = -1;
 
+global.board_states = [];
+
 player_black = instance_create_layer(-10, -10, "Instances", o_player);
+player_black.color_ = color_type.black;
 player_white = instance_create_layer(-20, -10, "Instances", o_player);
+player_white.color_ = color_type.white;
 
 current_player = player_black;
 
@@ -46,10 +49,33 @@ global.board_array = noone;
 
 global.groups = array_create(0);
 
-function group(_fields, _color) constructor 
+function Group(_fields, _color) constructor 
 {
 	color_		= _color;
 	fields_		= _fields;
+	
+}
+
+function State(player_, board_)constructor 
+{
+	current_player = player_;
+	board_state = [];
+	var size = array_length(board_);
+	var temp_board_state = array_create(size);
+	
+	//create each row empty;
+	for (var i = 0; i < size; ++i) {
+	    temp_board_state[i] = array_create(size);
+	}
+	
+	// assign each element by copying the struct from the field;
+	for (var i = 0; i < size; ++i) {
+		 for (var ii = 0; ii < size; ++ii) {
+			temp_board_state[i][ii] = copy_field(board_[i][ii], temp_board_state[i][ii]);
+		 }
+	}
+	
+	board_state = temp_board_state;
 	
 }
 

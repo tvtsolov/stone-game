@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"copy_field",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"copy_field",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,6 +1,4 @@
-team = noone;
 
-enum color {
-	white,
-	black
-}
+
+color_ = noone;
+caprured_stones = 0;
