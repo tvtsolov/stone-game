@@ -41,7 +41,7 @@
     {"id":{"name":"check_surrounded","path":"scripts/check_surrounded/check_surrounded.yy",},},
     {"id":{"name":"copy_field","path":"scripts/copy_field/copy_field.yy",},},
     {"id":{"name":"create_board","path":"scripts/create_board/create_board.yy",},},
-    {"id":{"name":"create_mock_board","path":"scripts/create_mock_board/create_mock_board.yy",},},
+    {"id":{"name":"create_mock_state","path":"scripts/create_mock_state/create_mock_state.yy",},},
     {"id":{"name":"create_sounds","path":"scripts/create_sounds/create_sounds.yy",},},
     {"id":{"name":"get_group_neighbors","path":"scripts/get_group_neighbors/get_group_neighbors.yy",},},
     {"id":{"name":"make_1stone_group","path":"scripts/make_1stone_group/make_1stone_group.yy",},},

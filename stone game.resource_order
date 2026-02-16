@@ -11,7 +11,7 @@
     {"name":"check_surrounded","order":12,"path":"scripts/check_surrounded/check_surrounded.yy",},
     {"name":"copy_field","order":15,"path":"scripts/copy_field/copy_field.yy",},
     {"name":"create_board","order":4,"path":"scripts/create_board/create_board.yy",},
-    {"name":"create_mock_board","order":16,"path":"scripts/create_mock_board/create_mock_board.yy",},
+    {"name":"create_mock_state","order":16,"path":"scripts/create_mock_state/create_mock_state.yy",},
     {"name":"create_sounds","order":11,"path":"scripts/create_sounds/create_sounds.yy",},
     {"name":"get_group_neighbors","order":5,"path":"scripts/get_group_neighbors/get_group_neighbors.yy",},
     {"name":"make_1stone_group","order":6,"path":"scripts/make_1stone_group/make_1stone_group.yy",},

@@ -73,9 +73,9 @@ function State(player_, board_, groups_) constructor
 	for (var i = 0; i < size; ++i) {
 		 for (var ii = 0; ii < size; ++ii) {
 			temp_board_state[i][ii] = copy_field(board_[i][ii], temp_board_state[i][ii]);
+			// ??????????????????? //stones need to have their group refs updated to the new groups
 		 }
 	}
-	
 	board_state = temp_board_state;
 	
 	var temp_groups = array_create(array_length(groups_));

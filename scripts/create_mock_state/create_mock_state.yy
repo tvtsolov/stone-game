@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"create_mock_board",
+  "%Name":"create_mock_state",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"create_mock_board",
+  "name":"create_mock_state",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
