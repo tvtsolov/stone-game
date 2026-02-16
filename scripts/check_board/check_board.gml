@@ -2,6 +2,7 @@ function check_board(_stone, played_field){
 	
 	// make new groups
 	check_neighbors_make_groups(_stone, played_field);
+	
 	var neighbor_groups = get_field_neighbor_groups(played_field, false);
 	
 	// remove surrounded stones

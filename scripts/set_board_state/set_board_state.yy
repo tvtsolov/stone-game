@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"set_board_state",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"set_board_state",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

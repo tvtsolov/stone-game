@@ -3,8 +3,8 @@
 #macro CAM_SCALE 2
 #macro SOUNDS global.sounds
 #macro STATES global.board_states
-#macro FIELD global.board_array
-#macro GROUPS global.groups
+#macro FIELD mock_state.board_state
+#macro GROUPS mock_state.groups
 
 
 enum color_type {
@@ -13,6 +13,8 @@ enum color_type {
 }
 
 temp_target = -1;
+mock_state = noone;
+
 
 global.board_states = [];
 
@@ -41,27 +43,26 @@ display_set_gui_size(CAM_W , CAM_H );
 view_set_camera(0, camera);
 
 
-board_size = 9;
-global.board_array = noone;
-
+global.board_size = 9;
+global.board_array = array_create(0);
+global.groups = array_create(0);
 
 //>>>>>>>>>>>GROUPS<<<<<<<<<<<//
 
-global.groups = array_create(0);
 
-function Group(_fields, _color) constructor 
+
+function Group(_color, _fields) constructor 
 {
 	color_		= _color;
 	fields_		= _fields;
-	
 }
 
-function State(player_, board_)constructor 
+function State(player_, board_, groups_) constructor 
 {
 	current_player = player_;
 	board_state = [];
 	var size = array_length(board_);
-	var temp_board_state = array_create(size);
+	var temp_board_state = array_create(size);  //this is all the current fields 
 	
 	//create each row empty;
 	for (var i = 0; i < size; ++i) {
@@ -77,6 +78,31 @@ function State(player_, board_)constructor
 	
 	board_state = temp_board_state;
 	
+	var temp_groups = array_create(array_length(groups_));
+	var groups_count = array_length(groups_);
+	
+	for (var i = 0; i < groups_count; ++i) {
+		var cur_group = groups_[i];
+		var fields_to_copy_num = array_length(cur_group.fields_);
+		var new_copied_fields = array_create(fields_to_copy_num);
+		var color__ = noone;
+		
+		for (var ii = 0; ii < fields_to_copy_num; ++ii) {
+			//color_
+			//fields_
+		    new_copied_fields[ii] = copy_field(cur_group.fields_[ii], new_copied_fields[ii]);
+			 
+		}
+		var new_group = new Group(cur_group.color_, new_copied_fields);
+		
+		temp_groups[i] = new_group;
+	}
+	
+	groups = temp_groups;
+	
+	//TODO when destroying the struct in case of vererting the board state, gotta check if this is garbadge collected
+	//when a latter states are deleted, State is a Class like thing, it manages the creation of the state 
+	//instances
 }
 
 create_sounds();

@@ -1,7 +1,7 @@
 
 function create_board(_size){
 	
-	FIELD[0][0] = o_field;
+	global.board_array[0][0] = o_field;
 	var x_pos = o_field.x;
 	var y_pos = o_field.y;
 	var offset = o_field.sprite_width+1;
@@ -9,12 +9,12 @@ function create_board(_size){
 	
 	for (var i = 0; i < _size; ++i) {
 	    for (var ii = 0; ii < _size; ++ii) {
-				FIELD[i][ii] = instance_create_layer(x_pos, y_pos, "fields", o_field);
-				FIELD[i][ii].row = i;
-				FIELD[i][ii].col = ii;
+				global.board_array[i][ii] = instance_create_layer(x_pos, y_pos, "fields", o_field);
+				global.board_array[i][ii].row = i;
+				global.board_array[i][ii].col = ii;
 				x_pos+=offset;
 		 }
 		 y_pos+=offset;	
-		 x_pos = FIELD[0][0].x;
+		 x_pos = global.board_array[0][0].x;
 	}
 }

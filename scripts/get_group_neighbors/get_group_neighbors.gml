@@ -10,7 +10,7 @@ function get_field_neighbor_groups(field_, same){
 	var played_row	= field_.row;
 	var played_col	= field_.col;
 		
-	var board_size	= array_length(global.board_array);			
+	var board_size	= global.board_size;			
 		
 	var up_field	= noone;
 	var up_group	= noone;

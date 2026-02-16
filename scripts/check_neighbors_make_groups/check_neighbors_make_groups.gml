@@ -1,7 +1,7 @@
 function check_neighbors_make_groups(placed_stone, played_field){
 
 var neighbor_groups	= array_create(0);
-var board_size			= array_length(global.board_array);	
+var board_size			= global.board_size;	
 var up_field			= noone;
 var right_field		= noone;
 var down_field			= noone;
