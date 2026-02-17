@@ -29,7 +29,7 @@ if mouse_check_button_pressed(mb_left){
 		set_board_state(mock_state);			// set the whole board to the new state
 		
 		//save the new board state
-		save_state(current_player, FIELD);	// log into history
+		save_state(current_player, FIELD, GROUPS);	// log into history
 		mock_state = noone;
 		
 		//play sounds
