@@ -15,6 +15,7 @@
     {"name":"create_sounds","order":11,"path":"scripts/create_sounds/create_sounds.yy",},
     {"name":"get_group_neighbors","order":5,"path":"scripts/get_group_neighbors/get_group_neighbors.yy",},
     {"name":"make_1stone_group","order":6,"path":"scripts/make_1stone_group/make_1stone_group.yy",},
+    {"name":"make_stone","order":18,"path":"scripts/make_stone/make_stone.yy",},
     {"name":"merge_groups","order":7,"path":"scripts/merge_groups/merge_groups.yy",},
     {"name":"run_sounds","order":10,"path":"scripts/run_sounds/run_sounds.yy",},
     {"name":"save_state","order":14,"path":"scripts/save_state/save_state.yy",},

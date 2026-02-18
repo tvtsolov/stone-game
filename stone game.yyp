@@ -45,6 +45,7 @@
     {"id":{"name":"create_sounds","path":"scripts/create_sounds/create_sounds.yy",},},
     {"id":{"name":"get_group_neighbors","path":"scripts/get_group_neighbors/get_group_neighbors.yy",},},
     {"id":{"name":"make_1stone_group","path":"scripts/make_1stone_group/make_1stone_group.yy",},},
+    {"id":{"name":"make_stone","path":"scripts/make_stone/make_stone.yy",},},
     {"id":{"name":"merge_groups","path":"scripts/merge_groups/merge_groups.yy",},},
     {"id":{"name":"run_sounds","path":"scripts/run_sounds/run_sounds.yy",},},
     {"id":{"name":"save_state","path":"scripts/save_state/save_state.yy",},},

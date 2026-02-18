@@ -3,14 +3,13 @@ function check_board(_stone, played_field){
 	// make new groups
 	check_neighbors_make_groups(_stone, played_field);
 	
+	//get the groups that are a different color
 	var neighbor_groups = get_field_neighbor_groups(played_field, false);
 	
-	// remove surrounded stones
+	// check if the neighboring groups are now surrounded and remove them if they are
 	check_surrounded_and_remove(neighbor_groups);
 	
 }
-
-
 
 	// TODO need the neighboring groups to check only them in the below function, use the last group created 
 	//		and check for it's neigbors

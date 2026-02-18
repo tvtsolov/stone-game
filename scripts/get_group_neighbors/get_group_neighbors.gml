@@ -1,10 +1,15 @@
+/// @param {Id.Instance} field_  Last played field
+/// @param {Bool} same Get groups of the same color(true) or not(false)
+
 function get_field_neighbor_groups(field_, same){
 	
 	var neighbors = array_create(0);
 	var played_field_color = field_.stone.color_;
-	
+	var color_to_check = -1;
 	if same {
-		played_field_color = played_field_color == 0 ? 1 : 0;
+		color_to_check = played_field_color;
+	} else {
+		color_to_check = played_field_color == 0 ? 1 : 0;
 	}
 	
 	var played_row	= field_.row;
@@ -25,7 +30,7 @@ function get_field_neighbor_groups(field_, same){
 		if played_row	> 0 { 
 			up_field		= FIELD[played_row-1][played_col];
 			var stone__ = up_field.stone;
-			if stone__ != noone and stone__.color_ != played_field_color{
+			if stone__ != noone and stone__.color_ == color_to_check{
 				up_group	= stone__.group_;
 				if !array_contains(neighbors,up_group){
 					array_push(neighbors, up_group);
@@ -36,7 +41,7 @@ function get_field_neighbor_groups(field_, same){
 		if played_col	<= board_size-2 {
 			right_field = FIELD[played_row][played_col+1];
 			var stone__ = right_field.stone;
-			if stone__ != noone and stone__.color_ != played_field_color{
+			if stone__ != noone and stone__.color_ == color_to_check{
 				right_group = stone__.group_;
 				if !array_contains(neighbors,right_group){
 					array_push(neighbors, right_group);
@@ -47,7 +52,7 @@ function get_field_neighbor_groups(field_, same){
 		if played_row	< board_size-2 {
 			down_field	= FIELD[played_row+1][played_col];
 			var stone__ = down_field.stone;
-			if stone__ != noone and stone__.color_ != played_field_color{
+			if stone__ != noone and stone__.color_ == color_to_check{
 				down_group = stone__.group_;
 				if !array_contains(neighbors,down_group){
 					array_push(neighbors, down_group);
@@ -58,7 +63,7 @@ function get_field_neighbor_groups(field_, same){
 		if played_col	> 0 {
 			left_field	= FIELD[played_row][played_col-1];
 			var stone__ = left_field.stone;
-			if stone__ != noone and stone__.color_ != played_field_color{
+			if stone__ != noone and stone__.color_ == color_to_check{
 				left_group = stone__.group_;
 				if !array_contains(neighbors,left_group){
 					array_push(neighbors, left_group);

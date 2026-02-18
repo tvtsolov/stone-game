@@ -3,8 +3,8 @@
 #macro CAM_SCALE 2
 #macro SOUNDS global.sounds
 #macro STATES global.board_states_history
-#macro FIELD mock_state.board_state
-#macro GROUPS mock_state.state_groups
+#macro FIELD global.board_array
+#macro GROUPS global.groups
 
 
 enum color_type {
@@ -63,17 +63,18 @@ function Group(_color, _fields, ) constructor
 function State(player_, board_, groups_) constructor 
 {
 	
+#region CREATEBOARD
 	current_player = player_;
 	board_state = [];
 	var size = array_length(board_);
 	var temp_board_state = array_create(size);  //this is all the current fields 
 	
-	// create each row empty;
+	// create each row empty
 	for (var i = 0; i < size; ++i) {
 	    temp_board_state[i] = array_create(size);
 	}
 	
-	// clone each field;
+	// clone each field into the 
 	for (var i = 0; i < size; ++i) {
 		 for (var ii = 0; ii < size; ++ii) {
 			temp_board_state[i][ii] = copy_field(board_[i][ii], temp_board_state[i][ii]);
@@ -81,38 +82,41 @@ function State(player_, board_, groups_) constructor
 	}
 	board_state = temp_board_state;
 	
+#endregion CREATEBOARD
+
+#region CREATEGROUPS
 
 	// The groups comes after because it uses the copied fields and works with them
-	
 	// create new groups
 	
-	var groups_count = array_length(groups_);
-	var temp_groups = array_create(groups_count);
+	var groups_num = array_length(groups_);
+	var temp_groups = array_create(groups_num);
+	for (var i = 0; i < groups_num; ++i) {
+		
+			var c = groups_[i].color_;
+			var curr_group = groups_[i];
+			var fields_num = array_length(groups_[i].fields_);
+			var temp_fields = array_create(fields_num);
+			var temp_group = new Group(c,temp_fields);
+			
+			for (var ii = 0; ii < fields_num; ++ii) {
+				
+				var row_ = curr_group.fields_[ii].row;
+				var col_ = curr_group.fields_[ii].col;
+				var temp_field = board_state[row_][col_];
+			
+				temp_field.stone.group_ = temp_group;
 
-	
-	for (var i = 0; i < groups_count; ++i) {
-		var cur_group = groups_[i];
-		var fields_to_copy_num = array_length(cur_group.fields_);
-		var new_copied_fields = array_create(fields_to_copy_num);
-		var color__ = noone;
-		
-		var new_group_ref = 1;
-		for (var ii = 0; ii < fields_to_copy_num; ++ii) {
-		    new_copied_fields[ii] = copy_field(cur_group.fields_[ii], new_copied_fields[ii]);
+			temp_fields[ii] = temp_field;
 		}
-		
-		var new_group = new Group(cur_group.color_, new_copied_fields);
-		
-		var size_ = array_length(new_group.fields_);
-		for (var k = 0; k < size_; ++k) {
-		    new_group.fields_[k].stone.group_ = new_group;
-		}
-		
-		temp_groups[i] = new_group;
+		temp_groups[i] = temp_group;
 	}
 	
-	state_groups = temp_groups; // < I need to update all stones in the mock_state to these Groups
-	var test = 4134;
+	state_groups = temp_groups;
+
+
+#endregion CREATEGROUPS
+
 }
 
 create_sounds();
