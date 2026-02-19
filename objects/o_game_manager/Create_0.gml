@@ -2,7 +2,7 @@
 #macro CAM_H 400
 #macro CAM_SCALE 2
 #macro SOUNDS global.sounds
-#macro STATES global.board_states_history
+#macro PREVIOUS_STATES global.board_states_history
 #macro FIELD global.board_array
 #macro GROUPS global.groups
 

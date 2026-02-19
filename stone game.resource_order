@@ -4,6 +4,7 @@
     {"name":"Sounds","order":7,"path":"folders/Sounds.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"activate_state","order":20,"path":"scripts/activate_state/activate_state.yy",},
     {"name":"check_allowed","order":13,"path":"scripts/check_allowed/check_allowed.yy",},
     {"name":"check_board","order":1,"path":"scripts/check_board/check_board.yy",},
     {"name":"check_neighbors_make_groups","order":2,"path":"scripts/check_neighbors_make_groups/check_neighbors_make_groups.yy",},
@@ -13,6 +14,7 @@
     {"name":"create_board","order":4,"path":"scripts/create_board/create_board.yy",},
     {"name":"create_mock_state","order":16,"path":"scripts/create_mock_state/create_mock_state.yy",},
     {"name":"create_sounds","order":11,"path":"scripts/create_sounds/create_sounds.yy",},
+    {"name":"deactivate_state","order":19,"path":"scripts/deactivate_state/deactivate_state.yy",},
     {"name":"get_group_neighbors","order":5,"path":"scripts/get_group_neighbors/get_group_neighbors.yy",},
     {"name":"make_1stone_group","order":6,"path":"scripts/make_1stone_group/make_1stone_group.yy",},
     {"name":"make_stone","order":18,"path":"scripts/make_stone/make_stone.yy",},

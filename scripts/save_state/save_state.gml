@@ -14,6 +14,6 @@ function save_state(_player, _board, _groups){
 		}
 	}
 	
-	array_push(STATES, state);
+	array_push(PREVIOUS_STATES, state);
 
 }
