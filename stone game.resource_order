@@ -20,6 +20,7 @@
     {"name":"make_stone","order":18,"path":"scripts/make_stone/make_stone.yy",},
     {"name":"merge_groups","order":7,"path":"scripts/merge_groups/merge_groups.yy",},
     {"name":"run_sounds","order":10,"path":"scripts/run_sounds/run_sounds.yy",},
+    {"name":"same_as_prev_state","order":21,"path":"scripts/same_as_prev_state/same_as_prev_state.yy",},
     {"name":"save_state","order":14,"path":"scripts/save_state/save_state.yy",},
     {"name":"set_board_state","order":17,"path":"scripts/set_board_state/set_board_state.yy",},
     {"name":"update_stones_group_refs_in_array","order":8,"path":"scripts/update_stones_group_refs_in_array/update_stones_group_refs_in_array.yy",},

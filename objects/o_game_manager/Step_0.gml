@@ -9,12 +9,15 @@ if mouse_check_button_pressed(mb_left){
 
 	if played_field != noone and played_field.stone = noone
 	{
-		
 		//mock_state = create_mock_state(current_player);
 		//var row = played_field.row;
 		//var col = played_field.col;
 		//played_field = mock_state.board_state[row][col];
-	
+		var prev_state = -1;
+		if array_length(PREVIOUS_STATES) > 2{
+			var size_states = array_length(PREVIOUS_STATES);
+			prev_state = PREVIOUS_STATES[size_states-2];
+		}
 		
 		var stone_type =  current_player = player_black ? o_stone_black : o_stone_white;
 		var stone_ = instance_create_layer(played_field.x, played_field.y, "Instances", stone_type);
@@ -29,6 +32,22 @@ if mouse_check_button_pressed(mb_left){
 		// group
 		
 		check_board(stone_, played_field);
+		
+		if prev_state != -1 {
+			var new_state = create_mock_state(current_player);
+			activate_state(prev_state);
+		
+			if (same_as_prev_state(new_state, prev_state)){
+				var test = 5235432;	
+			} 
+			
+					deactivate_state(new_state);
+					deactivate_state(prev_state);
+					delete new_state;
+					delete prev_state;
+		}
+		
+
 		
 		//apply new state if allowed
 			

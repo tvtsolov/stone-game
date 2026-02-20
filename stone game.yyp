@@ -50,6 +50,7 @@
     {"id":{"name":"make_stone","path":"scripts/make_stone/make_stone.yy",},},
     {"id":{"name":"merge_groups","path":"scripts/merge_groups/merge_groups.yy",},},
     {"id":{"name":"run_sounds","path":"scripts/run_sounds/run_sounds.yy",},},
+    {"id":{"name":"same_as_prev_state","path":"scripts/same_as_prev_state/same_as_prev_state.yy",},},
     {"id":{"name":"save_state","path":"scripts/save_state/save_state.yy",},},
     {"id":{"name":"set_board_state","path":"scripts/set_board_state/set_board_state.yy",},},
     {"id":{"name":"update_stones_group_refs_in_array","path":"scripts/update_stones_group_refs_in_array/update_stones_group_refs_in_array.yy",},},
