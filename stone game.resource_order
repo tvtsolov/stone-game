@@ -11,6 +11,7 @@
     {"name":"check_surrounded_and_remove","order":3,"path":"scripts/check_surrounded_and_remove/check_surrounded_and_remove.yy",},
     {"name":"check_surrounded","order":12,"path":"scripts/check_surrounded/check_surrounded.yy",},
     {"name":"copy_field","order":15,"path":"scripts/copy_field/copy_field.yy",},
+    {"name":"copy_state","order":22,"path":"scripts/copy_state/copy_state.yy",},
     {"name":"create_board","order":4,"path":"scripts/create_board/create_board.yy",},
     {"name":"create_mock_state","order":16,"path":"scripts/create_mock_state/create_mock_state.yy",},
     {"name":"create_sounds","order":11,"path":"scripts/create_sounds/create_sounds.yy",},

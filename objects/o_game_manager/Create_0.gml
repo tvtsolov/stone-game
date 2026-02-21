@@ -58,7 +58,9 @@ function Group(_color, _fields, ) constructor
 }
 
 
-
+/// @param {Id.Instance} 	player_  		Last played field
+/// @param {Array} 			board_ 			Get groups of the same color(true) or not(false)
+/// @param {Array} 	groups_  		Last played field
 
 function State(player_, board_, groups_) constructor 
 {
@@ -74,7 +76,7 @@ function State(player_, board_, groups_) constructor
 	    temp_board_state[i] = array_create(size);
 	}
 	
-	// clone each field into the 
+	// clone each field into the new group
 	for (var i = 0; i < size; ++i) {
 		 for (var ii = 0; ii < size; ++ii) {
 			temp_board_state[i][ii] = copy_field(board_[i][ii], temp_board_state[i][ii]);
