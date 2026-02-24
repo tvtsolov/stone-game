@@ -6,4 +6,5 @@ function make_1stone_group(placed_stone, played_field){
 	played_field.stone.group_ = gr;
 	
 	array_push(GROUPS, gr);
+	return gr;
 }

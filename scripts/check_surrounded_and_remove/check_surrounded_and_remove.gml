@@ -1,19 +1,29 @@
 /// @desc Function Description
-function check_surrounded_and_remove(groups_to_check){
-
-	var grps = groups_to_check;
+function check_surrounded_and_remove(neighbor_groups, self_group){
+	var self_is_surrounded = check_surrounded(self_group);
+	var grps = neighbor_groups;
 
 	var size = array_length(grps);
 	var groups_to_remove = array_create(0);
 
 	// check all groups if surrounded
 for (var i = 0; i < size; ++i) {
-	var is_surrounded = check_surrounded(grps[i]);
-		if is_surrounded {
-			array_push(groups_to_remove, grps[i]);
-		}
+	var n_group_is_surrounded = check_surrounded(grps[i]);
+	if n_group_is_surrounded {
+		array_push(groups_to_remove, grps[i]);
 	}
+}
 	
+	if self_is_surrounded 
+	and
+	array_length(groups_to_remove) == 0
+	{ 
+		is_allowed = false;
+		exit;
+	}
+	 
+	
+
 	// remove groups that are surrounded, from the big GROUPS
 	
 	var groups_to_remove_num = array_length(groups_to_remove);

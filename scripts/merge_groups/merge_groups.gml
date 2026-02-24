@@ -33,6 +33,7 @@ function merge_groups(groups_to_merge, played_field){
 		
 	add_field_to_group(played_field, first_group);
 	array_push(GROUPS, first_group);
+	return first_group;
 }
 
 

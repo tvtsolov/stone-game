@@ -14,6 +14,7 @@ enum color_type {
 
 temp_target = -1;
 mock_state = noone;
+is_allowed = true;
 
 
 global.board_states_history = [];

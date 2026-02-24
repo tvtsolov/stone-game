@@ -12,23 +12,19 @@ var left_field			= noone;
 	
 	
 if array_length(GROUPS) == 0 {
-		
-//make a group of one stone
-		
-	make_1stone_group(placed_stone, played_field);
-		
+		//make a group of one stone
+		return make_1stone_group(placed_stone, played_field);
 } else {
-	
-same_neighbor_groups = get_field_neighbor_groups(played_field, true);
+		same_neighbor_groups = get_field_neighbor_groups(played_field, true);
 
 		// deal with the neighboring goups here:
 		var same_neighbors_count = array_length(same_neighbor_groups);
 		if same_neighbors_count == 0 {
-			make_1stone_group(placed_stone, played_field);
+			return make_1stone_group(placed_stone, played_field);
 		} else if same_neighbors_count == 1 {
-			add_field_to_group(played_field,same_neighbor_groups[0]);
+			return add_field_to_group(played_field,same_neighbor_groups[0]);
 		} else {
-			merge_groups(same_neighbor_groups, played_field); // returns the last created group
+			return merge_groups(same_neighbor_groups, played_field); // returns the last created group
 		}
 	}
 }
