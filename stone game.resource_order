@@ -4,6 +4,9 @@
     {"name":"Sounds","order":7,"path":"folders/Sounds.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"Font_1","order":8,"path":"fonts/Font_1/Font_1.yy",},
+    {"name":"o_button","order":1,"path":"objects/o_button/o_button.yy",},
+    {"name":"o_text_display","order":2,"path":"objects/o_text_display/o_text_display.yy",},
     {"name":"activate_state","order":20,"path":"scripts/activate_state/activate_state.yy",},
     {"name":"check_allowed","order":13,"path":"scripts/check_allowed/check_allowed.yy",},
     {"name":"check_board","order":1,"path":"scripts/check_board/check_board.yy",},
@@ -32,5 +35,9 @@
     {"name":"snd_stone1_2","order":2,"path":"sounds/snd_stone1_2/snd_stone1_2.yy",},
     {"name":"snd_stone1_3","order":3,"path":"sounds/snd_stone1_3/snd_stone1_3.yy",},
     {"name":"snd_stone1_4","order":4,"path":"sounds/snd_stone1_4/snd_stone1_4.yy",},
+    {"name":"s_board","order":2,"path":"sprites/s_board/s_board.yy",},
+    {"name":"s_button_pass","order":4,"path":"sprites/s_button_pass/s_button_pass.yy",},
+    {"name":"s_field","order":1,"path":"sprites/s_field/s_field.yy",},
+    {"name":"s_stone","order":3,"path":"sprites/s_stone/s_stone.yy",},
   ],
 }
