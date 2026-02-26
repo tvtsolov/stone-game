@@ -1,4 +1,4 @@
-#macro CAM_W 400
+#macro CAM_W 500
 #macro CAM_H 400
 #macro CAM_SCALE 2
 #macro SOUNDS global.sounds
