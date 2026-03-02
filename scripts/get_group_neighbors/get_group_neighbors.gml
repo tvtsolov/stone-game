@@ -9,7 +9,7 @@ function get_field_neighbor_groups(field_, same){
 	if same {
 		color_to_check = played_field_color;
 	} else {
-		color_to_check = played_field_color == 0 ? 1 : 0;
+		color_to_check = played_field_color == color_type.black ? color_type.white : color_type.black;
 	}
 	
 	var played_row	= field_.row;

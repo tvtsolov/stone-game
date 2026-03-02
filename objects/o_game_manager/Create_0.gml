@@ -8,10 +8,20 @@
 
 
 enum color_type {
-	black, 
-	white	
+	black = -1, 
+	white	= 1
 }
 
+enum stage {
+	playing		= 1,
+	counting		= 2,
+	end_of_game = 3
+	
+}
+
+
+game_stage = stage.playing; 
+playing = true;
 temp_target = -1;
 mock_state = noone;
 is_allowed = true;
@@ -19,13 +29,17 @@ is_allowed = true;
 
 global.board_states_history = [];
 
+
 player_black = instance_create_layer(-10, -10, "Instances", o_player);
 player_black.color_ = color_type.black;
+player_black.pass = false;
+
 player_white = instance_create_layer(-20, -10, "Instances", o_player);
 player_white.color_ = color_type.white;
+player_white.pass = false;
 
 current_player = player_black;
-
+previous_player = player_white;
 
 camera = camera_create_view(0, 0, CAM_W, CAM_H);
 
