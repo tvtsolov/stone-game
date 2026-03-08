@@ -2,6 +2,7 @@ temp_target = noone;
 is_allowed = true;
 
 
+
 if game_stage = stage.playing{
 
 	if mouse_check_button_pressed(mb_left){
