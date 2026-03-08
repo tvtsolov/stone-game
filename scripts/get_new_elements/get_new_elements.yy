@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"get_new_elements",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_new_elements",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

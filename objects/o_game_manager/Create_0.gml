@@ -20,12 +20,13 @@ enum stage {
 }
 
 
+empty_groups = [];
 game_stage = stage.playing; 
 playing = true;
 temp_target = -1;
 mock_state = noone;
 is_allowed = true;
-
+draw_surrounded_empty_fields = false;
 
 global.board_states_history = [];
 

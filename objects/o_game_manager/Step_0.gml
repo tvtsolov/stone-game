@@ -52,8 +52,6 @@ if game_stage = stage.playing{
 					show_debug_message("the state is the same");
 					is_allowed = false;
 				} 
-			
-
 	
 				new_state.clean_up();
 				delete new_state;
@@ -95,12 +93,21 @@ if game_stage = stage.playing{
 			}
 		}
 	}
-} else if game_stage = stage.counting {
+		
 
-	//
-	var test = 152;
+	
+}	else if game_stage = stage.counting {
+
 		
 }
 
 
 run_sounds();
+
+
+set_surrounded_mark =  function(element){
+	element.is_internal_field = true;
+}
+clear_surrounded_mark = function(element){
+	element.is_internal_field = false;
+}
