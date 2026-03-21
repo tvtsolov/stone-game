@@ -56,6 +56,7 @@
     {"id":{"name":"get_free_neighbors_around_several_fields","path":"scripts/get_free_neighbors_around_several_fields/get_free_neighbors_around_several_fields.yy",},},
     {"id":{"name":"get_group_neighbors","path":"scripts/get_group_neighbors/get_group_neighbors.yy",},},
     {"id":{"name":"get_new_elements","path":"scripts/get_new_elements/get_new_elements.yy",},},
+    {"id":{"name":"group_empty_zones","path":"scripts/group_empty_zones/group_empty_zones.yy",},},
     {"id":{"name":"make_1stone_group","path":"scripts/make_1stone_group/make_1stone_group.yy",},},
     {"id":{"name":"make_stone","path":"scripts/make_stone/make_stone.yy",},},
     {"id":{"name":"merge_groups","path":"scripts/merge_groups/merge_groups.yy",},},

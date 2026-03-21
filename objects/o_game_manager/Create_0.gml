@@ -62,10 +62,11 @@ view_set_camera(0, camera);
 global.board_size = 9;
 global.board_array = array_create(0);
 global.groups = array_create(0);
+global.empty_zones = array_create(0);
 
 //>>>>>>>>>>>GROUPS<<<<<<<<<<<//
 
-
+create_sounds();
 
 function Group(_color, _fields) constructor 
 {
@@ -79,7 +80,6 @@ function Group(_color, _fields) constructor
 		fields_ = [];
 	}
 }
-
 
 /// @param {Id.Instance} 	player_  		Last played field
 /// @param {Array} 			board_ 			Get groups of the same color(true) or not(false)
@@ -142,46 +142,36 @@ function State(player_, board_, groups_) constructor
 
 #endregion CREATEGROUPS
 
-function clean_up() {
+	function clean_up() {
 	
-	var count = array_length(state_groups);
-	for (var i = 0; i < count; ++i) {
-		state_groups[i].clean_up();
+		var count = array_length(state_groups);
+		for (var i = 0; i < count; ++i) {
+			state_groups[i].clean_up();
+		}
+	
+		delete state_groups;
+	
+		var size = global.board_size;
+		for (var i = 0; i < size; ++i) {
+		    for (var ii = 0; ii < size; ++ii) {
+			     if board_state[i][ii].stone != noone {
+						with(board_state[i][ii].stone){
+							instance_destroy();
+						}	
+				  }
+				  instance_destroy(board_state[i][ii]);
+			 }
+		}
 	}
-	
-	delete state_groups;
-	
-	var size = global.board_size;
-	for (var i = 0; i < size; ++i) {
-	    for (var ii = 0; ii < size; ++ii) {
-		     if board_state[i][ii].stone != noone {
-					with(board_state[i][ii].stone){
-						instance_destroy();
-					}	
-			  }
-			  instance_destroy(board_state[i][ii]);
-		 }
-	}
+
 }
 
+
+function Empty_zone(fields) constructor {
+	
+	fields_ = fields;
+	
 }
-
-create_sounds();
-
-
-
-/*
-FIELD props:
-stone = noone;
-row = -1;
-col = -1;
-
-STONE props:
-object type/color
-*/
-
-
-
 
 
 

@@ -1,3 +1,5 @@
+
+/// @descr Gets fields(stones) around last played field
 /// @param {Id.Instance} field_  Last played field
 /// @param {Bool} same Get groups of the same color(true) or not(false)
 
