@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"get_group_neighbors",
+  "%Name":"collect_all_neighbors_arround_fields",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"get_group_neighbors",
+  "name":"collect_all_neighbors_arround_fields",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

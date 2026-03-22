@@ -5,6 +5,8 @@ function get_all_free_neigbour_fields(field_1){
 	var neighbors		= [];
 	var new_unchecked_fields = [];
 	
+
+	
 	//get all neigbour fields around this initial field
 	
 	
@@ -28,5 +30,11 @@ function get_all_free_neigbour_fields(field_1){
 		area = array_concat(area, new_unchecked_fields);
 		
 	}
+		//add the field to the area
+		
+	if !array_contains(area, field_1){
+		array_push(area, field_1);
+	}
+	
 	return area;
 }

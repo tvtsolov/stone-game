@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"get_field_neighbor_groups",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_field_neighbor_groups",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

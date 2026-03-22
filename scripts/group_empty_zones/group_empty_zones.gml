@@ -9,7 +9,7 @@ function group_empty_zones(){
 		var temp_zone = -1;
 		
 			if fld.stone = noone {
-				if fld.empty_group = noone {
+				if fld.empty_zone = noone {
 					temp_zone = get_all_free_neigbour_fields(fld);
 					
 					//make the array into a struct and add it into the global.empty_zones

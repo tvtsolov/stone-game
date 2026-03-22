@@ -11,10 +11,3 @@ function check_board(_stone, played_field){
 	
 }
 
-	// TODO need the neighboring groups to check only them in the below function, use the last group created 
-	//		and check for it's neigbors
-	// TODO forbid move that will make the whole new group surrounded/ maybe add forbiden fields based on this?
-	// maybe just check self first always and if 
-	// TODO need to add forbiden fields / atari
-	
-	
