@@ -1,8 +1,8 @@
-function collect_all_neighbors_arround_fields(fields){
+function collect_all_neighbours_arround_fields(fields){
 	
 	//TODO
 	
-	var neighbors[];
+	var neighbours[];
 	
 	var size = array_length(fields);
 
@@ -19,7 +19,7 @@ function collect_all_neighbors_arround_fields(fields){
 			if fld_temp.stone != noone
 			{
 				if fld_temp.is_internal_field = false
-					array_push(neighbors, fld_temp);
+					array_push(neighbours, fld_temp);
 			}
 		}
 	
@@ -29,7 +29,7 @@ function collect_all_neighbors_arround_fields(fields){
 			if fld_temp.stone != noone
 			{
 				if fld_temp.is_internal_field = false
-					array_push(neighbors, fld_temp);
+					array_push(neighbours, fld_temp);
 			}
 		}
 	
@@ -39,7 +39,7 @@ function collect_all_neighbors_arround_fields(fields){
 			if fld_temp.stone != noone
 			{
 				if fld_temp.is_internal_field = false
-					array_push(neighbors, fld_temp);
+					array_push(neighbours, fld_temp);
 			} 
 		}
 	
@@ -49,11 +49,11 @@ function collect_all_neighbors_arround_fields(fields){
 			if fld_temp.stone != noone
 			{
 				if fld_temp.is_internal_field = false
-					array_push(neighbors, fld_temp);
+					array_push(neighbours, fld_temp);
 			} 
 		}
 	}
 	
 	
-		return neighbors;
+	return neighbours;
 }

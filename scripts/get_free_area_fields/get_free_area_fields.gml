@@ -2,7 +2,7 @@
 
 function get_all_free_neigbour_fields(field_1){
 	var area				= [];
-	var neighbors		= [];
+	var neighbours		= [];
 	var new_unchecked_fields = [];
 	
 
@@ -11,22 +11,22 @@ function get_all_free_neigbour_fields(field_1){
 	
 	
 	// get (up to) 4 neigbours around one field
-	var free_fields_init = get_free_neighbors_around_one_field(field_1);
+	var free_fields_init = get_free_neighbours_around_one_field(field_1);
 	
-	//extract the fields that don't exits already in the "neighbors" array
+	//extract the fields that don't exits already in the "neighbours" array
 	
 	new_unchecked_fields = free_fields_init;
-	//new_unchecked_fields = get_new_elements(free_fields_init, neighbors);
+	//new_unchecked_fields = get_new_elements(free_fields_init, neighbours);
 	
-	//add the empty neighbors in the area[]
+	//add the empty neighbours in the area[]
 	
 	area = new_unchecked_fields;
 	//area = array_concat(area, new_unchecked_fields);
 	
 	while(array_length(new_unchecked_fields) > 0){
 		
-		neighbors = get_free_neighbors_around_several_fields(new_unchecked_fields);
-		new_unchecked_fields = get_new_elements(neighbors, area);
+		neighbours = get_free_neighbours_around_several_fields(new_unchecked_fields);
+		new_unchecked_fields = get_new_elements(neighbours, area);
 		area = array_concat(area, new_unchecked_fields);
 		
 	}

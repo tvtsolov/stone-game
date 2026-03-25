@@ -1,10 +1,10 @@
 ///@desc returns up to 4 neibouring empty field around the given field
 
-function get_free_neighbors_around_one_field(field_){
+function get_free_neighbours_around_one_field(field_){
 	
 	var row = field_.row;
 	var col = field_.col;
-	var neighbors = [];
+	var neighbours = [];
 	var fld = 0;
 	//up
 	if row > 0 {
@@ -12,7 +12,7 @@ function get_free_neighbors_around_one_field(field_){
 		if fld.stone = noone
 		{
 			if fld.is_internal_field = false
-				array_push(neighbors, fld);
+				array_push(neighbours, fld);
 		}
 	}
 	
@@ -22,7 +22,7 @@ function get_free_neighbors_around_one_field(field_){
 		if fld.stone = noone
 		{
 			if fld.is_internal_field = false
-				array_push(neighbors, fld);
+				array_push(neighbours, fld);
 		}
 	}
 	
@@ -32,7 +32,7 @@ function get_free_neighbors_around_one_field(field_){
 		if fld.stone = noone
 		{
 			if fld.is_internal_field = false
-				array_push(neighbors, fld);
+				array_push(neighbours, fld);
 		} 
 	}
 	
@@ -42,9 +42,9 @@ function get_free_neighbors_around_one_field(field_){
 		if fld.stone = noone
 		{
 			if fld.is_internal_field = false
-				array_push(neighbors, fld);
+				array_push(neighbours, fld);
 		} 
 	}
 	
-	return neighbors;
+	return neighbours;
 }

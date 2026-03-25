@@ -1,7 +1,7 @@
 /// @desc Function Description
-function check_surrounded_and_remove(neighbor_groups, self_group){
+function check_surrounded_and_remove(neighbour_groups, self_group){
 	var self_is_surrounded = check_surrounded(self_group);
-	var grps = neighbor_groups;
+	var grps = neighbour_groups;
 
 	var size = array_length(grps);
 	var groups_to_remove = array_create(0);

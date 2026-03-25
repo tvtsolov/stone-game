@@ -102,6 +102,8 @@ if game_stage = stage.playing{
 		
 }
 
+calculate_influence_board();
+
 
 run_sounds();
 

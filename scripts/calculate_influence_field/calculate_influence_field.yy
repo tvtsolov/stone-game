@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"calculate_influence",
+  "%Name":"calculate_influence_field",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"calculate_influence",
+  "name":"calculate_influence_field",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

@@ -3,9 +3,9 @@
 /// @param {Id.Instance} field_  Last played field
 /// @param {Bool} same Get groups of the same color(true) or not(false)
 
-function get_field_neighbor_groups(field_, same){
+function get_field_neighbour_groups(field_, same){
 	
-	var neighbors = array_create(0);
+	var neighbours = array_create(0);
 	var played_field_color = field_.stone.color_;
 	var color_to_check = -1;
 	if same {
@@ -34,8 +34,8 @@ function get_field_neighbor_groups(field_, same){
 			var stone__ = up_field.stone;
 			if stone__ != noone and stone__.color_ == color_to_check{
 				up_group	= stone__.group_;
-				if !array_contains(neighbors,up_group){
-					array_push(neighbors, up_group);
+				if !array_contains(neighbours,up_group){
+					array_push(neighbours, up_group);
 				}
 			}
 		} 
@@ -45,8 +45,8 @@ function get_field_neighbor_groups(field_, same){
 			var stone__ = right_field.stone;
 			if stone__ != noone and stone__.color_ == color_to_check{
 				right_group = stone__.group_;
-				if !array_contains(neighbors,right_group){
-					array_push(neighbors, right_group);
+				if !array_contains(neighbours,right_group){
+					array_push(neighbours, right_group);
 				}
 			}
 		}
@@ -56,8 +56,8 @@ function get_field_neighbor_groups(field_, same){
 			var stone__ = down_field.stone;
 			if stone__ != noone and stone__.color_ == color_to_check{
 				down_group = stone__.group_;
-				if !array_contains(neighbors,down_group){
-					array_push(neighbors, down_group);
+				if !array_contains(neighbours,down_group){
+					array_push(neighbours, down_group);
 				}
 			}
 		} 
@@ -67,13 +67,13 @@ function get_field_neighbor_groups(field_, same){
 			var stone__ = left_field.stone;
 			if stone__ != noone and stone__.color_ == color_to_check{
 				left_group = stone__.group_;
-				if !array_contains(neighbors,left_group){
-					array_push(neighbors, left_group);
+				if !array_contains(neighbours,left_group){
+					array_push(neighbours, left_group);
 				}
 			}
 		} 
 		
 	
-	return neighbors;
+	return neighbours;
 	
 }

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"check_neighbors_make_groups",
+  "%Name":"calculate_influence_board",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"check_neighbors_make_groups",
+  "name":"calculate_influence_board",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

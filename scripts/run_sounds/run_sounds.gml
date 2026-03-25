@@ -8,7 +8,7 @@ function run_sounds(){
 		
 		if arr_[i].play {
 				with arr_[i]{
-					audio_play_sound(sound, 1, false);
+					audio_play_sound(sound, 1, false, .1);
 					play = false;
 				}
 			}

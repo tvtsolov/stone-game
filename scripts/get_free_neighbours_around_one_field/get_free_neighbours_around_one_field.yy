@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"get_free_neighbors_around_several_fields",
+  "%Name":"get_free_neighbours_around_one_field",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"get_free_neighbors_around_several_fields",
+  "name":"get_free_neighbours_around_one_field",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

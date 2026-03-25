@@ -7,7 +7,7 @@ if draw_surrounded_empty_fields {
 		for (var i = 0; i < size; ++i) {
 			var item = element[i];
 			if item.is_internal_field {
-				draw_sprite_ext(s_mark_surrounded, 0, item.x, item.y, 1, 1, 0, c_white, 1);
+				draw_sprite_ext(s_mark_surrounded, 0, item.x, item.y, 1, 1, 0, c_white, item.alpha);
 			}
 		}
 	}
