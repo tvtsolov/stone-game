@@ -2,6 +2,8 @@ function calculate_influence_field(field){
 		
 		//determine is which quadrant the stone is in
 		
+		
+		
 		var row		= field.row;
 		var col		= field.col;
 		var color	= field.stone.color_;

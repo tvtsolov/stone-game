@@ -12,9 +12,9 @@ if draw_surrounded_empty_fields {
 			if item.is_internal_field {
 				//draw_rectangle_colour(item.x-offset, item.y-offset, item.x+offset, item.y+offset, true);
 				var sprite_influence = noone;
-				if item.black_influence > item.white_influence {
+				if item.white_influence =0 {
 					sprite_influence = s_infl_b;
-				} else if item.white_influence > item.black_influence {
+				} else if item.black_influence =0{
 					sprite_influence = s_infl_w;
 				}
 				if sprite_influence != noone {
