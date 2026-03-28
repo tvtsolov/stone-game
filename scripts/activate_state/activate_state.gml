@@ -6,7 +6,8 @@ function activate_state(state_){
 		instance_activate_object(temp_field);
 			if temp_field.stone != noone {
 				instance_activate_object(temp_field.stone);
-
+				
+				//in main
 			}
 		}
 	}
