@@ -11,6 +11,7 @@
 	//clear empty_zone group tag
 	for (var i = 0; i < array_length(global.empty_zones); ++i) {
 	    array_foreach(global.empty_zones[i].fields_, clear_empty_zone_tag);
+		 array_foreach(global.empty_zones[i].fields_, clear_influence);
 	}
 	
 	global.empty_zones = [];

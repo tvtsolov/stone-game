@@ -102,18 +102,7 @@ if game_stage = stage.playing{
 		
 }
 
-calculate_influence_board();
-
 
 run_sounds();
 
 
-set_empty_mark =  function(element){
-	element.is_internal_field = true;
-}
-clear_empty_mark = function(element){
-	element.is_internal_field = false;
-}
-clear_empty_zone_tag = function(element){
-	element.empty_zone = noone;
-}

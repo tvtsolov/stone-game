@@ -9,7 +9,7 @@ function calculate_influence_board(){
 		for (var ii = 0; ii < groups_size; ++ii) {
 				
 			calculate_influence_field(global.groups[i].fields_[ii]);
-
+			
 		}
 	}
 	

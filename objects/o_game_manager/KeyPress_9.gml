@@ -2,7 +2,7 @@
 // You can write your code in this editor
 	
 	group_empty_zones();
-	
+	calculate_influence_board();
 	
 	var number_of_zones = array_length(global.empty_zones);
 	

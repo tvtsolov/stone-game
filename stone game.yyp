@@ -21,7 +21,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.4.221",
   },
   "name":"stone game",
   "resources":[
@@ -80,7 +80,8 @@
     {"id":{"name":"s_button_pass","path":"sprites/s_button_pass/s_button_pass.yy",},},
     {"id":{"name":"s_display_text_player","path":"sprites/s_display_text_player/s_display_text_player.yy",},},
     {"id":{"name":"s_field","path":"sprites/s_field/s_field.yy",},},
-    {"id":{"name":"s_mark_surrounded","path":"sprites/s_mark_surrounded/s_mark_surrounded.yy",},},
+    {"id":{"name":"s_infl_b","path":"sprites/s_infl_b/s_infl_b.yy",},},
+    {"id":{"name":"s_infl_w","path":"sprites/s_infl_w/s_infl_w.yy",},},
     {"id":{"name":"s_stone_1","path":"sprites/s_stone_1/s_stone_1.yy",},},
     {"id":{"name":"s_stone","path":"sprites/s_stone/s_stone.yy",},},
   ],

@@ -49,7 +49,8 @@
     {"name":"s_button_pass","order":4,"path":"sprites/s_button_pass/s_button_pass.yy",},
     {"name":"s_display_text_player","order":5,"path":"sprites/s_display_text_player/s_display_text_player.yy",},
     {"name":"s_field","order":1,"path":"sprites/s_field/s_field.yy",},
-    {"name":"s_mark_surrounded","order":6,"path":"sprites/s_mark_surrounded/s_mark_surrounded.yy",},
+    {"name":"s_infl_b","order":7,"path":"sprites/s_infl_b/s_infl_b.yy",},
+    {"name":"s_infl_w","order":6,"path":"sprites/s_infl_w/s_infl_w.yy",},
     {"name":"s_stone","order":3,"path":"sprites/s_stone/s_stone.yy",},
   ],
 }
