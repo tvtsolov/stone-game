@@ -7,6 +7,7 @@ function activate_state(state_){
 			if temp_field.stone != noone {
 				instance_activate_object(temp_field.stone);
 				
+				//in peripheral
 			}
 		}
 	}
