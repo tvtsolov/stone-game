@@ -54,8 +54,10 @@ function calculate_influence_field(field){
 			if neighbour.stone == noone {
 				if color = color_type.black {
 					neighbour.black_influence += 0.35;
+					clamp(neighbour.black_influence, 0, 1);
 				} else {
 					neighbour.white_influence += 0.35;
+					clamp(neighbour.white_influence, 0, 1);
 				}
 				neighbour.alpha += 0.35;
 			} else {
@@ -73,8 +75,10 @@ function calculate_influence_field(field){
 			if neighbour.stone == noone {
 				if color = color_type.black {
 					neighbour.black_influence += 0.35;
+					clamp(neighbour.black_influence, 0, 1);
 				} else {
 					neighbour.white_influence += 0.35;
+					clamp(neighbour.white_influence, 0, 1);
 				}
 				neighbour.alpha += 0.35;
 			} else {
@@ -92,8 +96,10 @@ function calculate_influence_field(field){
 			if neighbour.stone == noone {
 				if color = color_type.black {
 					neighbour.black_influence += 0.35;
+					clamp(neighbour.black_influence, 0, 1);
 				} else {
 					neighbour.white_influence += 0.35;
+					clamp(neighbour.white_influence, 0, 1);
 				}				
 				neighbour.alpha += 0.35;
 			} else {
@@ -111,8 +117,10 @@ function calculate_influence_field(field){
 			if neighbour.stone == noone {
 				if color = color_type.black {
 					neighbour.black_influence += 0.35;
+					clamp(neighbour.black_influence, 0, 1);
 				} else {
 					neighbour.white_influence += 0.35;
+					clamp(neighbour.white_influence, 0, 1);
 				}				
 				neighbour.alpha += 0.35;
 			} else {
