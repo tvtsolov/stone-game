@@ -13,5 +13,6 @@
 	    array_foreach(global.empty_zones[i].fields_, clear_empty_zone_tag);
 		 array_foreach(global.empty_zones[i].fields_, clear_influence);
 	}
-	
+	global.score_zones_white = 0;
+	global.score_zones_black = 0;
 	global.empty_zones = [];
