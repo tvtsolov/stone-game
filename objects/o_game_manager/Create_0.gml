@@ -5,7 +5,7 @@
 #macro PREVIOUS_STATES global.board_states_history
 #macro FIELD global.board_array
 #macro GROUPS global.groups
-
+#macro BOARD_SIZE 9
 
 enum color_type {
 	black = -1, 
@@ -62,7 +62,7 @@ display_set_gui_size(CAM_W , CAM_H );
 view_set_camera(0, camera);
 
 
-global.board_size = 9;
+global.board_size = BOARD_SIZE;
 global.board_array = array_create(0);
 global.groups = array_create(0);
 global.empty_zones = array_create(0);
@@ -85,6 +85,7 @@ function Group(_color, _fields) constructor
 		}
 		fields_ = [];
 	}
+	linked_to = [];
 }
 
 /// @param {Id.Instance} 	player_  		Last played field

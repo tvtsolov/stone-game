@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"group_linked_groups",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"group_linked_groups",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

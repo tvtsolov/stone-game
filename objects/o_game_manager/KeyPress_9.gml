@@ -3,6 +3,7 @@
 	
 	group_empty_zones();
 	calculate_influence_board();
+	group_linked_groups();
 	
 	var number_of_zones = array_length(global.empty_zones);
 	
