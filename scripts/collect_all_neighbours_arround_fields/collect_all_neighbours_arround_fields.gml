@@ -1,6 +1,5 @@
 function collect_all_neighbours_arround_fields(fields){
 	
-	//TODO
 	
 	var neighbours[];
 	

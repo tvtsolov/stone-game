@@ -2,8 +2,15 @@
 // You can write your code in this editor
 	
 	group_empty_zones();
-	calculate_influence_board();
 	group_linked_groups();
+	
+	//get_eyes(); TODO
+	
+	mark_dead_groups(); //TODO not correct, some linked groups are not dead but marked as dead
+	calculate_influence_board(); // sets the o_field.alpha and o_field.white_influence/black_influence
+	add_edges_to_groups();
+	
+	//calculate hostiges(); TODO
 	
 	var number_of_zones = array_length(global.empty_zones);
 	

@@ -25,6 +25,7 @@ function group_linked_groups(){
 				top_left = FIELD[row-1][col-1];
 				if top_left.stone != noone and top_left.stone.color_ == group_color {
 					if !array_contains(field.stone.group_.linked_to, top_left.stone.group_)
+					and top_left.stone.group_ != group
 					{
 						array_push(field.stone.group_.linked_to,  top_left.stone.group_);
 					}
@@ -36,6 +37,7 @@ function group_linked_groups(){
 				top_right = FIELD[row-1][col+1];
 				if top_right.stone != noone and top_right.stone.color_ == group_color {
 					if !array_contains(field.stone.group_.linked_to, top_right.stone.group_)
+					and top_right.stone.group_ != group
 					{
 						array_push(field.stone.group_.linked_to,  top_right.stone.group_);
 					}
@@ -47,6 +49,7 @@ function group_linked_groups(){
 				bot_left = FIELD[row+1][col-1];
 				if bot_left.stone != noone and bot_left.stone.color_ == group_color {
 					if !array_contains(field.stone.group_.linked_to, bot_left.stone.group_)
+					and bot_left.stone.group_ != group
 					{
 						array_push(field.stone.group_.linked_to,  bot_left.stone.group_);
 					}
@@ -58,6 +61,7 @@ function group_linked_groups(){
 				bot_right = FIELD[row+1][col+1];
 				if bot_right.stone != noone and bot_right.stone.color_ == group_color {
 					if !array_contains(field.stone.group_.linked_to, bot_right.stone.group_)
+					and bot_right.stone.group_ != group
 					{
 						array_push(field.stone.group_.linked_to,  bot_right.stone.group_);
 					}
@@ -66,5 +70,19 @@ function group_linked_groups(){
 		}
 	}
 	
+	//gather all linked groups into the global.linked_groups array
+	
+	var single_linked_groups = global.groups;
+	var size_l = array_length(single_linked_groups);
+
+	
+	for (var i = 0; i < size_l; ++i) {
+		
+		var curr_group = single_linked_groups[i];
+		var new_linked_group =  get_linked_groups_from_group(curr_group);
+		if array_length(new_linked_group) != 0 {
+			array_push(global.linked_groups, new_linked_group);
+		}
+	}
 		
 }

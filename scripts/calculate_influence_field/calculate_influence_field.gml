@@ -1,6 +1,6 @@
 function calculate_influence_field(field){
 		
-		//determine is which quadrant the stone is in
+		//determine is which quadrant the stone is in first?
 		
 		var row		= field.row;
 		var col		= field.col;
@@ -51,7 +51,7 @@ function calculate_influence_field(field){
 		repeat(right_check){
 			temp_col ++;
 			neighbour = FIELD[row][temp_col];
-			if neighbour.stone == noone {
+			if neighbour.stone == noone or (neighbour.stone.group_.is_dead and neighbour.stone.color_ == -color) {
 				if color = color_type.black {
 					neighbour.black_influence += 0.35;
 					clamp(neighbour.black_influence, 0, 1);
@@ -60,6 +60,7 @@ function calculate_influence_field(field){
 					clamp(neighbour.white_influence, 0, 1);
 				}
 				neighbour.alpha += 0.35;
+				clamp(neighbour.alpha, 0, 1);
 			} else {
 				break;
 			}
@@ -72,7 +73,7 @@ function calculate_influence_field(field){
 		repeat(down_check){
 			temp_row++;
 			neighbour = FIELD[temp_row][col];
-			if neighbour.stone == noone {
+			if neighbour.stone == noone or (neighbour.stone.group_.is_dead and neighbour.stone.color_ == -color) {
 				if color = color_type.black {
 					neighbour.black_influence += 0.35;
 					clamp(neighbour.black_influence, 0, 1);
@@ -81,6 +82,7 @@ function calculate_influence_field(field){
 					clamp(neighbour.white_influence, 0, 1);
 				}
 				neighbour.alpha += 0.35;
+				clamp(neighbour.alpha, 0, 1);
 			} else {
 				break;
 			}
@@ -93,7 +95,7 @@ function calculate_influence_field(field){
 		repeat(left_check){
 			temp_col--;
 			neighbour = FIELD[row][temp_col];
-			if neighbour.stone == noone {
+			if neighbour.stone == noone or (neighbour.stone.group_.is_dead and neighbour.stone.color_ == -color) {
 				if color = color_type.black {
 					neighbour.black_influence += 0.35;
 					clamp(neighbour.black_influence, 0, 1);
@@ -102,6 +104,7 @@ function calculate_influence_field(field){
 					clamp(neighbour.white_influence, 0, 1);
 				}				
 				neighbour.alpha += 0.35;
+				clamp(neighbour.alpha, 0, 1);
 			} else {
 				break;
 			}
@@ -114,7 +117,7 @@ function calculate_influence_field(field){
 		repeat(up_check){
 			temp_row--;
 			neighbour = FIELD[temp_row][col];
-			if neighbour.stone == noone {
+			if neighbour.stone == noone or (neighbour.stone.group_.is_dead and neighbour.stone.color_ == -color) {
 				if color = color_type.black {
 					neighbour.black_influence += 0.35;
 					clamp(neighbour.black_influence, 0, 1);
@@ -123,6 +126,7 @@ function calculate_influence_field(field){
 					clamp(neighbour.white_influence, 0, 1);
 				}				
 				neighbour.alpha += 0.35;
+				clamp(neighbour.alpha, 0, 1);
 			} else {
 				break;
 			}

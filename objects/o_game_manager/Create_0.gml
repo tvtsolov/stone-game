@@ -62,10 +62,12 @@ display_set_gui_size(CAM_W , CAM_H );
 view_set_camera(0, camera);
 
 
-global.board_size = BOARD_SIZE;
-global.board_array = array_create(0);
-global.groups = array_create(0);
-global.empty_zones = array_create(0);
+global.board_size		= BOARD_SIZE;
+global.board_array	= array_create(0);
+global.groups			= array_create(0);
+global.empty_zones	= array_create(0);
+global.linked_groups = array_create(0); // the complete linked groups
+
 
 make_scripts();
 
@@ -86,11 +88,14 @@ function Group(_color, _fields) constructor
 		fields_ = [];
 	}
 	linked_to = [];
+	edges = [];
+	is_dead = false;
+	checked = false; // multipurpose flag
 }
 
 /// @param {Id.Instance} 	player_  		Last played field
 /// @param {Array} 			board_ 			Get groups of the same color(true) or not(false)
-/// @param {Array} 	groups_  		Last played field
+/// @param {Array} 			groups_  		Last played field
 
 function State(player_, board_, groups_) constructor 
 {

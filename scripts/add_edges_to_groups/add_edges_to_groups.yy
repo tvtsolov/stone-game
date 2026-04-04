@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"add_edges_to_groups",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"add_edges_to_groups",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
