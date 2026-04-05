@@ -6,39 +6,27 @@ function calculate_influence_field(field){
 		var col		= field.col;
 		var color	= field.stone.color_;
 		
-		var right_check	= 4;
-		var down_check		= 4;
-		var left_check		= 4;
-		var up_check		= 4;
+		var right_check	= 0;
+		var down_check		= 0;
+		var left_check		= 0;
+		var up_check		= 0;
 		
 		var colour			= field.stone.color_;
 		var oposite_color = color == 1 ? -1 : 1;
 		
 		//right
-		
-		if global.board_size - 5 < col {
-			right_check = ((global.board_size-1) - col);
-		}
+		right_check = (global.board_size-1) - col;
 		
 		//down
-		
-		if global.board_size - 5 < row {
-			down_check = ((global.board_size-1) - row);
-		}
-		
+		down_check = (global.board_size-1) - row;
+
 		//left
-		
-		if col <= 3 {
-			left_check = col;
-		}
+		left_check = col;
 		
 		//up
-		
-		if row <= 3 {
-			up_check = row;
-		}
-		
-		
+		up_check = row;
+
+
 		
 		var neighbour	= 0;
 		var temp_row	= 0;

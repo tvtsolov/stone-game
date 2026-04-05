@@ -25,7 +25,5 @@ function make_scripts(){
 	clear_checked_flag = function(element) {
 		element.checked = false;	
 	}
-	
-	
 
 }

@@ -41,6 +41,7 @@
     {"id":{"name":"add_edges_to_group","path":"scripts/add_edges_to_group/add_edges_to_group.yy",},},
     {"id":{"name":"add_edges_to_groups","path":"scripts/add_edges_to_groups/add_edges_to_groups.yy",},},
     {"id":{"name":"add_field_to_group","path":"scripts/add_field_to_group/add_field_to_group.yy",},},
+    {"id":{"name":"add_linked_group_reference","path":"scripts/add_linked_group_reference/add_linked_group_reference.yy",},},
     {"id":{"name":"calculate_influence_board","path":"scripts/calculate_influence_board/calculate_influence_board.yy",},},
     {"id":{"name":"calculate_influence_field","path":"scripts/calculate_influence_field/calculate_influence_field.yy",},},
     {"id":{"name":"check_allowed","path":"scripts/check_allowed/check_allowed.yy",},},

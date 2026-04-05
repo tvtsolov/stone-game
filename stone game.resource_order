@@ -11,6 +11,7 @@
     {"name":"activate_state","order":20,"path":"scripts/activate_state/activate_state.yy",},
     {"name":"add_edges_to_group","order":41,"path":"scripts/add_edges_to_group/add_edges_to_group.yy",},
     {"name":"add_edges_to_groups","order":40,"path":"scripts/add_edges_to_groups/add_edges_to_groups.yy",},
+    {"name":"add_linked_group_reference","order":43,"path":"scripts/add_linked_group_reference/add_linked_group_reference.yy",},
     {"name":"calculate_influence_board","order":31,"path":"scripts/calculate_influence_board/calculate_influence_board.yy",},
     {"name":"calculate_influence_field","order":34,"path":"scripts/calculate_influence_field/calculate_influence_field.yy",},
     {"name":"check_allowed","order":13,"path":"scripts/check_allowed/check_allowed.yy",},

@@ -21,7 +21,9 @@ enum stage {
 
 
 global.score_zones_white = 0;
+global.black_stones_hostiges = 0;
 global.score_zones_black = 0;
+global.white_stones_hostiges = 0;
 
 empty_groups = [];
 game_stage = stage.playing; 

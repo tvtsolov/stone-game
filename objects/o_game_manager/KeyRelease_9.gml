@@ -19,6 +19,11 @@
 	
 	//clear checked flag (this flag is used for collecting the linked groups)
 	array_foreach(global.groups, clear_checked_flag);
+
+	
+	
+	//TODO clear stone.chained_group
+	
 	
 		
 	global.score_zones_white = 0;

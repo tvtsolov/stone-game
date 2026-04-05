@@ -27,6 +27,8 @@ for (var i = 0; i < size; ++i) {
 	// remove groups that are surrounded, from the big GROUPS
 	
 	var groups_to_remove_num = array_length(groups_to_remove);
+	
+	
 	for (var i = 0; i < groups_to_remove_num; ++i) {
 		
 		var group_to_remove_ref = groups_to_remove[i];
@@ -41,6 +43,12 @@ for (var i = 0; i < size; ++i) {
 
 		
 	   var num_of_fields_to_free = array_length(GROUPS[index].fields_);
+		
+		if GROUPS[index].color_ = color_type.white {
+			global.white_stones_hostiges += num_of_fields_to_free;
+		} else {
+			global.black_stones_hostiges += num_of_fields_to_free;
+		}
 		
 		for (var ii = 0; ii < num_of_fields_to_free; ++ii) {
 			var fld_to_empty = GROUPS[index].fields_[ii];

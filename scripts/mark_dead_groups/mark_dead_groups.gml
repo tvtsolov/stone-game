@@ -5,12 +5,13 @@ function mark_dead_groups(){
 		var group = global.groups[i];
 		var group_size = array_length(group.fields_);
 		var linked_to_others = array_length(group.linked_to);
+		var edges_num = array_length(group.edges);
 		
 		if linked_to_others == 0 { 
 			if group_size <= 4 
 			{
 				group.is_dead = true;
-			} else if group_size < 11 
+			} else if group_size < 11 and edges_num < 2
 			{
 			   group.is_dead = true;
 			}

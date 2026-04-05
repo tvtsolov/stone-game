@@ -1,2 +1,3 @@
-group_ = noone;
-color_ = noone;
+group_			= noone;
+chained_group	= noone;
+color_			= noone;

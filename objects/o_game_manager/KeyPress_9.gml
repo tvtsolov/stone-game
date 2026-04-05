@@ -3,18 +3,24 @@
 	
 	group_empty_zones();
 	group_linked_groups();
-	
-	//get_eyes(); TODO
-	
+	//TODO add linked_group regerence to all groups that are linked
+	// Group.linked_group = noone by default
 	mark_dead_groups(); //TODO not correct, some linked groups are not dead but marked as dead
-	calculate_influence_board(); // sets the o_field.alpha and o_field.white_influence/black_influence
-	add_edges_to_groups();
+	add_linked_group_reference();
 	
-	//calculate hostiges(); TODO
+
+
+	
+	calculate_influence_board(); // sets the o_field.alpha and o_field.white_influence/black_influence
+	//TODO the above, the calculation at the start is not correct
+	
+	add_edges_to_groups();
+	// TODO add_edges_to_zones() ?
 	
 	var number_of_zones = array_length(global.empty_zones);
 	
-	get_score();
+	get_score(); //TODO add hostiges to the score
+	
 	show_debug_message("BLACK: " + string(global.score_zones_black));
 	show_debug_message("WHITE: " + string(global.score_zones_white));
 	

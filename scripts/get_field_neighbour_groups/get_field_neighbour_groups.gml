@@ -51,7 +51,7 @@ function get_field_neighbour_groups(field_, same){
 			}
 		}
 //take field DOWN
-		if played_row	< board_size-2 {
+		if played_row	<= board_size-2 {
 			down_field	= FIELD[played_row+1][played_col];
 			var stone__ = down_field.stone;
 			if stone__ != noone and stone__.color_ == color_to_check{
