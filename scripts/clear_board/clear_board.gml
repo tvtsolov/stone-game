@@ -42,4 +42,6 @@ function clear_board(){
 	show_debug_message(instance_number(o_stone));
 	show_debug_message(instance_number(o_field));
 	
+	global.black_stones_hostiges = 0;
+	global.white_stones_hostiges = 0;
 }

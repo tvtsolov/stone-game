@@ -156,6 +156,7 @@ function State(player_, board_, groups_) constructor
 
 #endregion CREATEGROUPS
 
+#region CLEANUP
 	function clean_up() {
 	
 		var count = array_length(state_groups);
@@ -176,14 +177,18 @@ function State(player_, board_, groups_) constructor
 				  instance_destroy(board_state[i][ii]);
 			 }
 		}
+		
+		//TODO clean up all the emty zones as well
 	}
 
 }
+#endregion
 
 
 function Empty_zone(fields) constructor {
 	
-	fields_ = fields;
+	fields_	= fields;
+	disputed = false;
 	
 }
 

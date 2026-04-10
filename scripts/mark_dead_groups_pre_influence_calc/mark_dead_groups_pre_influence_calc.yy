@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"check_allowed",
+  "%Name":"mark_dead_groups_pre_influence_calc",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"check_allowed",
+  "name":"mark_dead_groups_pre_influence_calc",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

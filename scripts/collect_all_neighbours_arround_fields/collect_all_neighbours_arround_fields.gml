@@ -17,7 +17,7 @@ function collect_all_neighbours_arround_fields(fields){
 			fld_temp = FIELD[row-1][col];
 			if fld_temp.stone != noone
 			{
-				if fld_temp.is_internal_field = false
+				if fld_temp.is_empty_field = false
 					array_push(neighbours, fld_temp);
 			}
 		}
@@ -27,7 +27,7 @@ function collect_all_neighbours_arround_fields(fields){
 			fld_temp = FIELD[row][col+1];
 			if fld_temp.stone != noone
 			{
-				if fld_temp.is_internal_field = false
+				if fld_temp.is_empty_field = false
 					array_push(neighbours, fld_temp);
 			}
 		}
@@ -37,7 +37,7 @@ function collect_all_neighbours_arround_fields(fields){
 			fld_temp = FIELD[row+1][col];
 			if fld_temp.stone != noone
 			{
-				if fld_temp.is_internal_field = false
+				if fld_temp.is_empty_field = false
 					array_push(neighbours, fld_temp);
 			} 
 		}
@@ -47,7 +47,7 @@ function collect_all_neighbours_arround_fields(fields){
 			fld_temp = FIELD[row][col-1];
 			if fld_temp.stone != noone
 			{
-				if fld_temp.is_internal_field = false
+				if fld_temp.is_empty_field = false
 					array_push(neighbours, fld_temp);
 			} 
 		}

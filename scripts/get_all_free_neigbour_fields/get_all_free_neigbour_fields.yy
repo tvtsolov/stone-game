@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"get_free_area_fields",
+  "%Name":"get_all_free_neigbour_fields",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"get_free_area_fields",
+  "name":"get_all_free_neigbour_fields",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

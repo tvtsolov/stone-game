@@ -82,6 +82,7 @@ function group_linked_groups(){
 		var new_linked_group =  get_linked_groups_from_group(curr_group);
 		if array_length(new_linked_group) != 0 {
 			array_push(global.linked_groups, new_linked_group);
+			// TODO add edges to linked_groups per linked group?
 		}
 	}
 		

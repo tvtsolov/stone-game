@@ -1,4 +1,4 @@
-function mark_dead_groups(){
+function mark_dead_groups_pre_influence_calc(){
 	var size = array_length(global.groups);
 	
 	for (var i = 0; i < size; ++i) {
@@ -17,5 +17,14 @@ function mark_dead_groups(){
 			}
 		}
 	}
+	
+	/*
+	 for linked groups the dead linked groups are:
+	 - ones that have only two elements and both elements are less than 5 fields and has no edges
+	 - 
+	
+	
+	*/
+	
 	
 }

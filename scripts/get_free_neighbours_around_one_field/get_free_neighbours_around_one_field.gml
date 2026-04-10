@@ -1,6 +1,8 @@
-///@desc returns up to 4 neibouring empty field around the given field
+/// @desc returns up to 4 neibouring empty field around the given field
+/// @param {String} cond what to exclude when getting the fields
 
-function get_free_neighbours_around_one_field(field_){
+
+function get_free_neighbours_around_one_field(field_, cond = 0){
 	
 	var row = field_.row;
 	var col = field_.col;
@@ -9,9 +11,9 @@ function get_free_neighbours_around_one_field(field_){
 	//up
 	if row > 0 {
 		fld = FIELD[row-1][col];
-		if fld.stone = noone
+		if fld.stone = noone or (cond == "dead_groups" and fld.stone.group_.is_dead)
 		{
-			if fld.is_internal_field = false
+			//if fld.is_empty_field = false
 				array_push(neighbours, fld);
 		}
 	}
@@ -19,9 +21,9 @@ function get_free_neighbours_around_one_field(field_){
 	//right
 	if col < global.board_size-1 {
 		fld = FIELD[row][col+1];
-		if fld.stone = noone
+		if fld.stone = noone or (cond == "dead_groups" and fld.stone.group_.is_dead)
 		{
-			if fld.is_internal_field = false
+			//if fld.is_empty_field = false
 				array_push(neighbours, fld);
 		}
 	}
@@ -29,9 +31,9 @@ function get_free_neighbours_around_one_field(field_){
 	//down
 	if row < global.board_size-1 {
 		fld = FIELD[row+1][col];
-		if fld.stone = noone
+		if fld.stone = noone or (cond == "dead_groups" and fld.stone.group_.is_dead)
 		{
-			if fld.is_internal_field = false
+			//if fld.is_empty_field = false
 				array_push(neighbours, fld);
 		} 
 	}
@@ -39,9 +41,9 @@ function get_free_neighbours_around_one_field(field_){
 	//left
 	if col > 0 {
 		fld = FIELD[row][col-1];
-		if fld.stone = noone
+		if fld.stone = noone or (cond == "dead_groups" and fld.stone.group_.is_dead)
 		{
-			if fld.is_internal_field = false
+			//if fld.is_empty_field = false
 				array_push(neighbours, fld);
 		} 
 	}

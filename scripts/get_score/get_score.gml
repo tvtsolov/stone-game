@@ -47,9 +47,9 @@ function get_score(){
 		b_influenced = 0;
 	}
 	
-	global.score_zones_white += score_white;
+	global.score_zones_white += score_white + global.black_stones_hostiges;
 	
-	global.score_zones_black += score_black;
+	global.score_zones_black += score_black + global.white_stones_hostiges;
 	
 }
 

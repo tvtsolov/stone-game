@@ -1,11 +1,11 @@
 function make_scripts(){
 	
 	set_empty_mark = function(element){
-		element.is_internal_field = true;
+		element.is_empty_field = true;
 	}
 	
 	clear_empty_mark = function(element){
-		element.is_internal_field = false;
+		element.is_empty_field = false;
 	}
 	
 	clear_empty_zone_tag = function(element){

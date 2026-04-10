@@ -1,25 +1,24 @@
-/// @description Insert description here
-// You can write your code in this editor
+	/// @description 
 	
-	group_empty_zones();
-	group_linked_groups();
-	//TODO add linked_group regerence to all groups that are linked
-	// Group.linked_group = noone by default
-	mark_dead_groups(); //TODO not correct, some linked groups are not dead but marked as dead
-	add_linked_group_reference();
 	
-
-
+	group_linked_groups();						// fills global.linked_groups
+	add_edges_to_groups();						// currently only adds the stones touching the edges to edges[] per group
 	
-	calculate_influence_board(); // sets the o_field.alpha and o_field.white_influence/black_influence
-	//TODO the above, the calculation at the start is not correct
+	mark_dead_groups_pre_influence_calc(); // need to check if all linked groups are not also dead
 	
-	add_edges_to_groups();
-	// TODO add_edges_to_zones() ?
+	group_empty_zones(); 
+	
+	add_linked_group_reference();	
+	calculate_influence_board();				// TODO implement if disputed or not for Zone
+	
+	
+	//mark_dead_groups_post_influence_calc();
+	
+	
 	
 	var number_of_zones = array_length(global.empty_zones);
 	
-	get_score(); //TODO add hostiges to the score
+	get_score(); 
 	
 	show_debug_message("BLACK: " + string(global.score_zones_black));
 	show_debug_message("WHITE: " + string(global.score_zones_white));

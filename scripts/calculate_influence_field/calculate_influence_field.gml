@@ -1,7 +1,7 @@
 function calculate_influence_field(field){
 		
 		//determine is which quadrant the stone is in first?
-		
+								
 		var row		= field.row;
 		var col		= field.col;
 		var color	= field.stone.color_;
@@ -24,7 +24,7 @@ function calculate_influence_field(field){
 		left_check = col;
 		
 		//up
-		up_check = row;
+		up_check = row;		
 
 
 		
