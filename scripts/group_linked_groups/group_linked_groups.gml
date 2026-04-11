@@ -81,6 +81,9 @@ function group_linked_groups(){
 		var curr_group = single_linked_groups[i];
 		var new_linked_group =  get_linked_groups_from_group(curr_group);
 		if array_length(new_linked_group) != 0 {
+			
+			new_linked_group = new Chained_group(new_linked_group);
+			
 			array_push(global.linked_groups, new_linked_group);
 			// TODO add edges to linked_groups per linked group?
 		}

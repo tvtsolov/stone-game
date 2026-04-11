@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"zone_is_eye",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"zone_is_eye",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

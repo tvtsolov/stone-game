@@ -51,6 +51,7 @@
     {"name":"show_stones","order":23,"path":"scripts/show_stones/show_stones.yy",},
     {"name":"update_stones_group_refs_in_array","order":8,"path":"scripts/update_stones_group_refs_in_array/update_stones_group_refs_in_array.yy",},
     {"name":"update_stones_group_refs_in_group","order":9,"path":"scripts/update_stones_group_refs_in_group/update_stones_group_refs_in_group.yy",},
+    {"name":"zone_is_eye","order":45,"path":"scripts/zone_is_eye/zone_is_eye.yy",},
     {"name":"snd_stone1_1","order":1,"path":"sounds/snd_stone1_1/snd_stone1_1.yy",},
     {"name":"snd_stone1_2","order":2,"path":"sounds/snd_stone1_2/snd_stone1_2.yy",},
     {"name":"snd_stone1_3","order":3,"path":"sounds/snd_stone1_3/snd_stone1_3.yy",},

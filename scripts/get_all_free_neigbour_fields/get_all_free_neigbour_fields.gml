@@ -1,5 +1,7 @@
 /// @description Gets all empty fields that start from one field (field_1)
-/// @param {String} cond what to exclude when getting the fields
+
+/// @param {Asset.GMObject} field what field to check against
+/// @param {String} cond what to include when getting the fields
 
 
 function get_all_free_neigbour_fields(field_1, cond = 0){

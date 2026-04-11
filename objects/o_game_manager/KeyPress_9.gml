@@ -9,6 +9,7 @@
 	group_empty_zones(); 
 	
 	add_linked_group_reference();	
+	get_eyes();		// TODO currently gets all fields that are completely surrounded and ads them as eyes
 	calculate_influence_board();				// TODO implement if disputed or not for Zone
 	
 	

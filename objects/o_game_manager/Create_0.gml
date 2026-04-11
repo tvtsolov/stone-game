@@ -192,6 +192,10 @@ function Empty_zone(fields) constructor {
 	
 }
 
-
-
+function Chained_group(groups_) constructor {
+	
+	groups = groups_;
+	eyes = 0;
+	
+}
 

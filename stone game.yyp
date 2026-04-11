@@ -81,6 +81,7 @@
     {"id":{"name":"show_stones","path":"scripts/show_stones/show_stones.yy",},},
     {"id":{"name":"update_stones_group_refs_in_array","path":"scripts/update_stones_group_refs_in_array/update_stones_group_refs_in_array.yy",},},
     {"id":{"name":"update_stones_group_refs_in_group","path":"scripts/update_stones_group_refs_in_group/update_stones_group_refs_in_group.yy",},},
+    {"id":{"name":"zone_is_eye","path":"scripts/zone_is_eye/zone_is_eye.yy",},},
     {"id":{"name":"snd_stone1_0","path":"sounds/snd_stone1_0/snd_stone1_0.yy",},},
     {"id":{"name":"snd_stone1_1","path":"sounds/snd_stone1_1/snd_stone1_1.yy",},},
     {"id":{"name":"snd_stone1_2","path":"sounds/snd_stone1_2/snd_stone1_2.yy",},},
