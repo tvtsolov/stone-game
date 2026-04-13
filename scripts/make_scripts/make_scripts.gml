@@ -26,4 +26,6 @@ function make_scripts(){
 		element.checked = false;	
 	}
 
+	
+
 }

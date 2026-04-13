@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"zone_is_eye",
+  "%Name":"check_if_real_eye",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"zone_is_eye",
+  "name":"check_if_real_eye",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"get_eyes",
+  "%Name":"is_same_group",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"get_eyes",
+  "name":"is_same_group",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"zone_is_owned_by_one_group",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"zone_is_owned_by_one_group",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

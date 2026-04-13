@@ -91,6 +91,7 @@ function Group(_color, _fields) constructor
 	}
 	linked_to = [];
 	edges = [];
+	eyes = [];
 	is_dead = false;
 	checked = false; // multipurpose flag
 }
@@ -187,15 +188,17 @@ function State(player_, board_, groups_) constructor
 
 function Empty_zone(fields) constructor {
 	
-	fields_	= fields;
-	disputed = false;
+	fields_				= fields;
+	disputed				= false;
+	is_real_eye			= false;
+	is_possible_eye	= false;
 	
 }
 
 function Chained_group(groups_) constructor {
 	
 	groups = groups_;
-	eyes = 0;
+	possible_eyes = 0;
 	
 }
 

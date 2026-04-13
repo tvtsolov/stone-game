@@ -9,8 +9,12 @@
 	group_empty_zones(); 
 	
 	add_linked_group_reference();	
-	get_eyes();		// TODO currently gets all fields that are completely surrounded and ads them as eyes
-	calculate_influence_board();				// TODO implement if disputed or not for Zone
+	check_eyes();		
+	
+	// based on the eyes, I can re-calculate which groups are dead and which are alive.... I can do that here
+	
+	calculate_influence_board();				// TODO implement if disputed or not for Zone. 
+	//ALSO consider which groups are really dead, maybe run mark_dead_groups_post... here to add more dead groups to the bunch
 	
 	
 	//mark_dead_groups_post_influence_calc();

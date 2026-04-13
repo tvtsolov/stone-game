@@ -9,3 +9,4 @@ empty_zone			= noone; // the tag to point to the empty zone group the field belo
 white_influence	= 0;
 black_influence	= 0;
 alpha					= 0;
+

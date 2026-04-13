@@ -88,5 +88,4 @@ function group_linked_groups(){
 			// TODO add edges to linked_groups per linked group?
 		}
 	}
-		
 }
