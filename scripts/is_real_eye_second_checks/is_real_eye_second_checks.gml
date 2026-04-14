@@ -92,10 +92,18 @@ if array_contains(checked, field) {
 		if valid_eyes == num_of_liberties {
 			field.empty_zone.is_real_eye = true;
 			return true;
+		} else if valid_eyes = num_of_liberties-1 {
+			return true;
+			//not a real eye
+		} else {
+			return false;
 		}
 		
-	} else if num_of_liberties == 0 {
-		field.empty_zone.is_real_eye = true;
+		
+	} 
+	else if num_of_liberties == 0 {
+		field.empty_zone.is_real_eye = true; //TODO - needs to check if the group has any other "real eyes on it" (2 of them actually)
+		// if not, it's not a real eye
 		return true;
 	}
 	

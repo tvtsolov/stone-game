@@ -29,7 +29,7 @@ function check_eyes(){
 			for (var ii = 0; ii < size_zone; ++ii) {
 			 
 				var field = zone.fields_[ii];
-				is_real_eye_second_checks(zone.fields_[0]);
+				zone.is_real_eye = is_real_eye_second_checks(zone.fields_[0]);
 				// need to reset the black/white_influence, check above
 			}	
 		}
