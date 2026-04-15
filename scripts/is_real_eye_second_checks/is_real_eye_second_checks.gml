@@ -66,7 +66,7 @@ if array_contains(checked, field) {
 	var num_of_liberties = array_length(liberties);
 	
 
-	if num_of_liberties > 1
+	if num_of_liberties > 0
 	{
 		
 		// check if they are possible eyes
@@ -74,7 +74,10 @@ if array_contains(checked, field) {
 		var invalid_eyes	= 0;
 		
 		for (var i = 0; i < num_of_liberties; ++i) {
-			if array_length(liberties[i].empty_zone.fields_) == 1 and liberties[i].empty_zone.is_possible_eye {
+			
+			var zone_temp = liberties[i].empty_zone;
+			
+			if array_length(zone_temp.fields_) == 1 and zone_temp.is_possible_eye{
 				
 				var fld_to_check = liberties[i];
 				if is_real_eye_second_checks(fld_to_check, checked) {
@@ -92,7 +95,8 @@ if array_contains(checked, field) {
 		if valid_eyes == num_of_liberties {
 			field.empty_zone.is_real_eye = true;
 			return true;
-		} else if valid_eyes = num_of_liberties-1 {
+		} else if valid_eyes > 1 {
+			field.empty_zone.is_real_eye = true;
 			return true;
 			//not a real eye
 		} else {
@@ -108,7 +112,7 @@ if array_contains(checked, field) {
 	}
 	
 	
-	
+	return false;
 	
 	
 	// reset w/b_influence

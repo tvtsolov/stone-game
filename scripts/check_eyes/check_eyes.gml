@@ -10,7 +10,7 @@ function check_eyes(){
 		
 		if size_zone == 1 {
 			var field = zone.fields_[0];
-			zone_is_owned_by_one_group(zone);
+			zone_is_owned_by_one_group(zone); // only marks possible eyes, not really doing what it looks like :)
 			// uses black/white_influence as a flag to carry the color
 		}
 
