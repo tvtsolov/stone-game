@@ -63,8 +63,11 @@ if array_contains(checked, field) {
 #endregion	
 	
 	
-	var num_of_liberties = array_length(liberties);
 	
+	var num_of_liberties = array_length(liberties); // these are empty board fields
+	
+	
+	//check for forks
 
 	if num_of_liberties > 0
 	{
@@ -80,34 +83,51 @@ if array_contains(checked, field) {
 			if array_length(zone_temp.fields_) == 1 and zone_temp.is_possible_eye{
 				
 				var fld_to_check = liberties[i];
-				if is_real_eye_second_checks(fld_to_check, checked) {
-					valid_eyes ++;
-				} else {
-					invalid_eyes ++;
-				}
 				
-			} else {
-				invalid_eyes++;
+				// TODOTODO
+				// make sure it's not near an edge
+				// if near edge - check differently 
+				
+				//if edges
+				//if field_is_near_edge(field) {
+				//	// TODOTODO diferent check
+					
+					
+				//} else 
+				//if no edges
+				{
+					if is_real_eye_second_checks(fld_to_check, checked) {
+						valid_eyes ++;
+					} else {
+						invalid_eyes ++;
+					}
+				}
+			//} else {
+				//invalid_eyes++;
+			//}
 			}
 		}
 		
-		//check how many of the liberties have returned true:
-		if valid_eyes == num_of_liberties {
+		// YY check how many of the liberties have returned true (are part of a grid of eyes that are all closed in the end)
+		if (valid_eyes == num_of_liberties) 
+			or 
+			(valid_eyes == num_of_liberties-1) 
+		{
 			field.empty_zone.is_real_eye = true;
+			assign_eye_to_groups(field);
 			return true;
-		} else if valid_eyes > 1 {
-			field.empty_zone.is_real_eye = true;
-			return true;
-			//not a real eye
 		} else {
+			// TODOTODO
+			// check if the liberties are on the same like ot on the same diagonal 
+			// then check how secure the groups are that form, if they are secure, we can return true as well
 			return false;
 		}
-		
-		
-	} 
+	}
 	else if num_of_liberties == 0 {
 		field.empty_zone.is_real_eye = true; //TODO - needs to check if the group has any other "real eyes on it" (2 of them actually)
 		// if not, it's not a real eye
+		// add to the single group that is surrounding it
+		assign_eye_to_groups(field);
 		return true;
 	}
 	

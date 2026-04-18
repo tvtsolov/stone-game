@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"assign_eye_to_groups",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"assign_eye_to_groups",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

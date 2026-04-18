@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"field_is_near_edge",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"field_is_near_edge",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
