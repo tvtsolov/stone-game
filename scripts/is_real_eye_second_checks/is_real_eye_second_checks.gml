@@ -83,32 +83,15 @@ if array_contains(checked, field) {
 			if array_length(zone_temp.fields_) == 1 and zone_temp.is_possible_eye{
 				
 				var fld_to_check = liberties[i];
-				
-				// TODOTODO
-				// make sure it's not near an edge
-				// if near edge - check differently 
-				
-				//if edges
-				//if field_is_near_edge(field) {
-				//	// TODOTODO diferent check
-					
-					
-				//} else 
-				//if no edges
 				{
 					if is_real_eye_second_checks(fld_to_check, checked) {
 						valid_eyes ++;
-					} else {
-						invalid_eyes ++;
 					}
 				}
-			//} else {
-				//invalid_eyes++;
-			//}
 			}
 		}
 		
-		// YY check how many of the liberties have returned true (are part of a grid of eyes that are all closed in the end)
+		// check how many of the liberties have returned true (are part of a grid of eyes that are all closed in the end)
 		if (valid_eyes == num_of_liberties) 
 			or 
 			(valid_eyes == num_of_liberties-1) 
@@ -118,8 +101,8 @@ if array_contains(checked, field) {
 			return true;
 		} else {
 			// TODOTODO
-			// check if the liberties are on the same like ot on the same diagonal 
-			// then check how secure the groups are that form, if they are secure, we can return true as well
+			// diagonal split or one single group split
+			eyes_group_checks(field);
 			return false;
 		}
 	}

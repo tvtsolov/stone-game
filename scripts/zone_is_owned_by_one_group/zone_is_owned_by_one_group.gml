@@ -107,6 +107,8 @@ function zone_is_owned_by_one_group(zone){
 			//return true; // is eye for sure
 		//} 
 		possible_eye.empty_zone.is_possible_eye = true;
+		assign_eye_to_groups(possible_eye, false);
+		
 	}
 	
 	return false;

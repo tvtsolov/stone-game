@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"collect_all_groups_arround_eye",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"collect_all_groups_arround_eye",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

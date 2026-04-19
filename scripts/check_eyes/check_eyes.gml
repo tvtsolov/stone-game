@@ -16,6 +16,11 @@ function check_eyes(){
 
 	}
 	
+	// check for 2 shared possible_eyes and mark secured:
+	check_shared_eyes_mark_secured();
+	
+	// check for the rest of the conditions to mark a group secure
+	mark_secured_groups_last_checks();
 	
 	
 	// scan based on diagonal liberties

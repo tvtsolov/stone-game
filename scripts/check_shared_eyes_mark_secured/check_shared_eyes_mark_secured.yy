@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"check_shared_eyes_mark_secured",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"check_shared_eyes_mark_secured",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"check_matching_eyes_in_two_groups",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"check_matching_eyes_in_two_groups",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"collect_all_neighbours_arround_fields",
+  "%Name":"eyes_group_checks",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"collect_all_neighbours_arround_fields",
+  "name":"eyes_group_checks",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

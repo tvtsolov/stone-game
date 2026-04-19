@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"mark_secured_groups_last_checks",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mark_secured_groups_last_checks",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
