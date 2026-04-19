@@ -31,21 +31,7 @@ function mark_secured_groups_last_checks(){
 					}
 				}
 			}
-			 
-		 //} else if r_eyes == 0 and possible_eyes > 1 {
-			// // check if the eyes are shared with the same group anywhere
-			 
-		 //} 
-
 	}
-	
-	// has 2 eyes 
-	
-	
-	// shares 2 possible eyes with another group
-	
-	
-	// shares 1 possible eye with another group + the other group has at least one other group or is secured already
 	
 	
 	

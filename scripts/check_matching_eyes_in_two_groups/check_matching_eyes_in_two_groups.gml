@@ -9,12 +9,20 @@ function check_matching_eyes_in_two_groups(group1, group2){
 	
 	for (var i = 0; i < eyes_gr_1_size; ++i) {
 		var cur_eye_1 = eyes_gr_1[i];
-		for (var ii = 0; ii < eyes_gr_2_size; ++ii) {
-			var cur_eye_2 = eyes_gr_2[ii];
-			if cur_eye_1 == cur_eye_2 {
-				num_maching_eyes++;
-				if num_maching_eyes > 1 {
-					return true;
+		// this function really is worth it's salt only if the eyes it's checkign have exactly 2 groups
+		// as neighbors
+		if array_length(collect_all_groups_arround_eye(cur_eye_1)) == 2 {
+			for (var ii = 0; ii < eyes_gr_2_size; ++ii) {
+			
+				var cur_eye_2 = eyes_gr_2[ii];
+				
+				if array_length(collect_all_groups_arround_eye(cur_eye_2)) == 2 {
+					if cur_eye_1 == cur_eye_2 {
+						num_maching_eyes++;
+						if num_maching_eyes > 1 {
+							return true;
+						}
+					}
 				}
 			}
 		}
