@@ -2,10 +2,9 @@
 
 function assign_eye_to_groups(eye, real_eyes = true){
 	
-	var row = eye.row;
-	var col = eye.col;
+	var row = eye.fields_[0].row;
+	var col = eye.fields_[0].col;
 	
-	//TODOTODO check if this is not all the same group
 	var neighbor_groups = [];
 	
 	if real_eyes {
@@ -67,8 +66,8 @@ function assign_eye_to_groups(eye, real_eyes = true){
 			var group = fld.stone.group_;
 			if !array_contains(neighbor_groups, group) {
 				array_push(neighbor_groups, group);
-				if !array_contains(group.possible_eyes, eye){
-					array_push(group.possible_eyes, eye);
+				if !array_contains(group.eyes, eye){
+					array_push(group.eyes, eye);
 				}
 			}
 		
@@ -80,8 +79,8 @@ function assign_eye_to_groups(eye, real_eyes = true){
 			var group = fld.stone.group_;
 			if !array_contains(neighbor_groups, group) {
 				array_push(neighbor_groups, group);
-				if !array_contains(group.possible_eyes, eye){
-					array_push(group.possible_eyes, eye);
+				if !array_contains(group.eyes, eye){
+					array_push(group.eyes, eye);
 				}
 			}
 		}
@@ -92,8 +91,8 @@ function assign_eye_to_groups(eye, real_eyes = true){
 			var group = fld.stone.group_;
 			if !array_contains(neighbor_groups, group) {
 				array_push(neighbor_groups, group);
-				if !array_contains(group.possible_eyes, eye){
-					array_push(group.possible_eyes, eye);
+				if !array_contains(group.eyes, eye){
+					array_push(group.eyes, eye);
 				}
 			}
 		}	
@@ -104,8 +103,8 @@ function assign_eye_to_groups(eye, real_eyes = true){
 			var group = fld.stone.group_;
 			if !array_contains(neighbor_groups, group) {
 				array_push(neighbor_groups, group);
-				if !array_contains(group.possible_eyes, eye){
-					array_push(group.possible_eyes, eye);
+				if !array_contains(group.eyes, eye){
+					array_push(group.eyes, eye);
 				}
 			}
 		}

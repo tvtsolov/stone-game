@@ -1,12 +1,12 @@
-function collect_all_groups_arround_eye(eye){
+function get_all_groups_arround_eye(eye, exclude_groups = noone){
 	
 	
 	var groups = [];
 	
 	var size = array_length(eye);
 		
-	var row			= eye.row;
-	var col			= eye.col;
+	var row			= eye.fields_[0].row;
+	var col			= eye.fields_[0].col;
 	var fld_temp	= 0;
 		
 	//up
@@ -45,5 +45,10 @@ function collect_all_groups_arround_eye(eye){
 		}
 	}
 
+	
+	if exclude_groups != noone {
+		var new_groups = get_new_elements(groups, exclude_groups);
+		return new_groups;
+	}
 	return groups;
 }

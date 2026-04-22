@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"zone_is_owned_by_one_group",
+  "%Name":"check_and_mark_secured_groups",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"zone_is_owned_by_one_group",
+  "name":"check_and_mark_secured_groups",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

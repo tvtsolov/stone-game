@@ -1,16 +1,16 @@
 function eyes_group_checks(eye){
 	
 	
-	var groups = collect_all_groups_arround_eye(eye);
-
+	var groups = get_all_groups_arround_eye(eye);
 	var size = array_length(groups);
 	
 	for (var i = 0; i < size; ++i) {
 	    
 		var group = groups[i];
 		if array_length(group.eyes) >= 2 {
-			// return true;
+			continue;
 		} else {
+			return false;
 			//check recursively each possible eye
 			
 			
@@ -24,7 +24,6 @@ function eyes_group_checks(eye){
 			// or 
 			// one "real" eye (my tag means "surrounded by only one group with max od 1 liberty")
 		}
-		 
 	}
-	
+	return true;
 }

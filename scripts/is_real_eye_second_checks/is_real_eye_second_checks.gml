@@ -63,7 +63,6 @@ if array_contains(checked, field) {
 #endregion	
 	
 	
-	
 	var num_of_liberties = array_length(liberties); // these are empty board fields
 	
 	
@@ -100,10 +99,7 @@ if array_contains(checked, field) {
 			assign_eye_to_groups(field);
 			return true;
 		} else {
-			// TODOTODO
-			// diagonal split or one single group split
-			eyes_group_checks(field);
-			return false;
+			return eyes_group_checks(field);
 		}
 	}
 	else if num_of_liberties == 0 {
