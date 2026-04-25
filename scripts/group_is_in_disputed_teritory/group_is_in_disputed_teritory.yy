@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"group_is_in_disputed_teritory",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"group_is_in_disputed_teritory",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -26,6 +26,14 @@ function make_scripts(){
 		element.checked = false;	
 	}
 
+	clear_disputed_tag = function(element) {
+		element.disputed = false;	
+	}
+	
+	clear_secured_tag = function(element) {
+		element.secured = false;	
+	}
+	
 	
 
 }
