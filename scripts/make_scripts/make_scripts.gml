@@ -34,6 +34,10 @@ function make_scripts(){
 		element.secured = false;	
 	}
 	
+	remove_all_eyes = function(element) {
+		element.eyes = [];	
+	}
+	
 	
 
 }

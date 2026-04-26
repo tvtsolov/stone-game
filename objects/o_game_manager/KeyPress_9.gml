@@ -9,6 +9,7 @@
 	group_empty_zones(); 
 	
 	add_linked_group_reference();	
+	
 	check_eyes();		
 	
 	calculate_influence_board();		

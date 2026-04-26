@@ -76,6 +76,7 @@
     {"id":{"name":"group_is_in_disputed_teritory","path":"scripts/group_is_in_disputed_teritory/group_is_in_disputed_teritory.yy",},},
     {"id":{"name":"group_is_secured","path":"scripts/group_is_secured/group_is_secured.yy",},},
     {"id":{"name":"group_linked_groups","path":"scripts/group_linked_groups/group_linked_groups.yy",},},
+    {"id":{"name":"groups_are_same_color","path":"scripts/groups_are_same_color/groups_are_same_color.yy",},},
     {"id":{"name":"is_real_eye_second_checks","path":"scripts/is_real_eye_second_checks/is_real_eye_second_checks.yy",},},
     {"id":{"name":"is_same_group","path":"scripts/is_same_group/is_same_group.yy",},},
     {"id":{"name":"make_1stone_group","path":"scripts/make_1stone_group/make_1stone_group.yy",},},

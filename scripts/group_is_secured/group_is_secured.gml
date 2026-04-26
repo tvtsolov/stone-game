@@ -19,7 +19,7 @@ function group_is_secured(group, checked_groups = noone){
 		
 		var eye = eyes[i];
 		
-	    var eye_groups = get_all_groups_arround_eye(eye, checked_groups);
+	   var eye_groups = get_all_groups_arround_eye(eye, checked_groups);
 		
 		var groups_num = array_length(eye_groups);
 		if groups_num = 0 {

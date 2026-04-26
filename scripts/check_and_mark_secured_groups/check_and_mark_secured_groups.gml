@@ -1,4 +1,7 @@
+
 function check_and_mark_secured_groups(){
+	
+	
 	var groups = global.groups;
 	var size = array_length(groups);
 	for (var i = 0; i < size; ++i) {
@@ -19,5 +22,4 @@ function check_and_mark_secured_groups(){
 			}
 		}
 	}
-	
 }

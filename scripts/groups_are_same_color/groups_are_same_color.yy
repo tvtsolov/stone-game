@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"groups_are_same_color",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"groups_are_same_color",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

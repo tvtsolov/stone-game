@@ -46,6 +46,7 @@
     {"name":"group_is_in_disputed_teritory","order":59,"path":"scripts/group_is_in_disputed_teritory/group_is_in_disputed_teritory.yy",},
     {"name":"group_is_secured","order":56,"path":"scripts/group_is_secured/group_is_secured.yy",},
     {"name":"group_linked_groups","order":38,"path":"scripts/group_linked_groups/group_linked_groups.yy",},
+    {"name":"groups_are_same_color","order":60,"path":"scripts/groups_are_same_color/groups_are_same_color.yy",},
     {"name":"is_real_eye_second_checks","order":48,"path":"scripts/is_real_eye_second_checks/is_real_eye_second_checks.yy",},
     {"name":"is_same_group","order":46,"path":"scripts/is_same_group/is_same_group.yy",},
     {"name":"make_1stone_group","order":6,"path":"scripts/make_1stone_group/make_1stone_group.yy",},

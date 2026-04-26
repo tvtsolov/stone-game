@@ -2,6 +2,7 @@
 
 function assign_eye_to_groups(eye, real_eyes = true){
 	
+
 	var row = eye.fields_[0].row;
 	var col = eye.fields_[0].col;
 	
