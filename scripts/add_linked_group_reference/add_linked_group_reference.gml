@@ -14,13 +14,7 @@ function add_linked_group_reference(){
 			
 			for (var iii = 0; iii < size_group; ++iii) {
 				var stone = group.fields_[iii].stone;
-				if group.is_dead {
-					stone.chained_group = noone; //resets the chained tag if the stone is not in a live chain
-					//show_debug_message("not real chain");
-				} else {
-					stone.chained_group = chained_group_curr;
-					//show_debug_message("is real chain");
-				}
+
 			}
 		}
 	}

@@ -12,12 +12,10 @@ function mark_dead_groups_pre_influence_calc(){
 			{
 				group.is_dead = true;
 			} 
-			
-			//else if group_size < 11 and edges_num < 2
-			//{
-			//   group.is_dead = true;
-			//}
-		}
+		} else if group_size < 11 and edges_num < 2 and linked_to_others == 0
+		{
+			group.is_dead = true;
+		} 
 	}
 	
 	/*
