@@ -2,8 +2,8 @@
 function create_board(_size){
 	
 	global.board_array[0][0] = o_field;
-	var x_pos = o_field.x;
-	var y_pos = o_field.y;
+	var x_pos = global.board_start_coordinates+1;
+	var y_pos = global.board_start_coordinates+1;
 	var offset = o_field.sprite_width+1;
 	instance_destroy(o_field);
 	
