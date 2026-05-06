@@ -8,6 +8,11 @@
 	    array_foreach(FIELD[i], clear_empty_mark);
 	}
 	
+	for (var i = 0; i < array_length(global.groups); ++i) {
+	    var group_cur = global.groups[i];
+		 group_cur.linked_to = [];
+	}
+	
 	//clear empty_zone group tag
 	for (var i = 0; i < array_length(global.empty_zones); ++i) {
 		// can put all these in one single loop, no need of so many loops really

@@ -1,3 +1,5 @@
+///@ descr This returns 
+
 function get_all_fields_around_group(group_){
 	var result = [];
 	var size = array_length(group_.fields_);

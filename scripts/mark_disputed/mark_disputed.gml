@@ -29,29 +29,30 @@ for (var i = 0; i < size; ++i) {
 	
 	for (var i = 0; i < empty_groups_num; ++i) {
 		var infl = 0;
-		var empty_zone = (global.empty_zones[i])
+		var empty_zone = (global.empty_zones[i]);
 		var zone_size = array_length(empty_zone.fields_);
 		for (var ii = 0; ii < zone_size; ++ii) {
 
 			var field = empty_zone.fields_[ii];
 			
-			//TODOTODO needs some serious improvement
-			
 			if field.black_influence > 0 and field.white_influence == 0 {
-				if infl == 0 or infl == 1 {
+				if infl == 0 {
 					infl = -1;
 				}
-				else if infl == 1 or infl == 0
+				else if infl == 1
 				{ 
 					empty_zone.disputed = true;
 					break; 
 				}
 			} else if field.black_influence == 0 and field.white_influence > 0 {
-				if infl == 0 or infl == -1
+				if infl == 0 {
+					infl = 1;
+				}
+				else if infl == -1
 				{ 
 					empty_zone.disputed = true;
 					break; 
-				}	
+				}
 			}
 				
 			

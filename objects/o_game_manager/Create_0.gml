@@ -18,6 +18,8 @@ enum stage {
 }
 
 
+fullscreen = false;
+
 global.score_zones_white = 0;
 global.black_stones_hostiges = 0;
 global.score_zones_black = 0;

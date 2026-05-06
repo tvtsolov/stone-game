@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"add_influence",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"add_influence",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
