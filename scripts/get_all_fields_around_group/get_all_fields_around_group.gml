@@ -1,4 +1,4 @@
-///@ descr This returns 
+///@ descr
 
 function get_all_fields_around_group(group_){
 	var result = [];
@@ -13,7 +13,7 @@ function get_all_fields_around_group(group_){
 		//up
 		if row > 0 {
 			fld_temp = FIELD[row-1][col];
-			if !array_contains(result, fld_temp){
+			if !array_contains(result, fld_temp) and !array_contains(group_.fields_, fld_temp){ // exclude all stoens that are already part of the group
 				array_push(result, fld_temp);
 			}
 		}
@@ -21,7 +21,7 @@ function get_all_fields_around_group(group_){
 		//right
 		if col < global.board_size-1 {
 			fld_temp = FIELD[row][col+1];
-			if !array_contains(result, fld_temp){
+			if !array_contains(result, fld_temp) and !array_contains(group_.fields_, fld_temp){
 				array_push(result, fld_temp);
 			}
 		}
@@ -29,7 +29,7 @@ function get_all_fields_around_group(group_){
 		//down
 		if row < global.board_size-1 {
 			fld_temp = FIELD[row+1][col];
-			if !array_contains(result, fld_temp){
+			if !array_contains(result, fld_temp) and !array_contains(group_.fields_, fld_temp){
 				array_push(result, fld_temp);
 			}
 		}
@@ -37,7 +37,7 @@ function get_all_fields_around_group(group_){
 		//left
 		if col > 0 {
 			fld_temp = FIELD[row][col-1];
-			if !array_contains(result, fld_temp){
+			if !array_contains(result, fld_temp) and !array_contains(group_.fields_, fld_temp){
 				array_push(result, fld_temp);
 			}
 		}

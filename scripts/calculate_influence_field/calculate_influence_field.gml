@@ -43,13 +43,24 @@ function calculate_influence_field(field){
 		repeat(right_check){
 			temp_col ++;
 			neighbour = FIELD[row][temp_col];
-			if neighbour.stone == noone 
+			if (neighbour.stone == noone) 
 				or 
-				(neighbour.stone.group_.is_dead and neighbour.stone.color_ == -color and !neighbour.stone.group_.secured)
-				or 
-				(array_length(neighbour.stone.group_.linked_to) > 0 and array_length(neighbour.stone.group_.fields_) < 4)
-				//check if immediately linked group is outside the empty zone
+				(neighbour.stone.color_ == -color and !neighbour.stone.group_.secured)
 			{
+				if (neighbour.stone.color_ == -color and !neighbour.stone.group_.secured) {
+					
+					if array_length(neighbour.stone.group_.linked_to) > 0 {
+						break;
+					}
+				
+				}
+				//if array_length(neighbour.stone.group_.linked_to) > 0 and array_length(neighbour.stone.group_.fields_) < 4 
+				//{
+				//	//check if all linked groups are outside the empty zone
+				//	var linked_groups = neighbour.stone.group_.linked_to;
+					
+					
+				//}
 				
 				if color = color_type.black {
 					neighbour.black_influence += 0.35;
@@ -61,7 +72,7 @@ function calculate_influence_field(field){
 				neighbour.alpha += 0.35;
 				clamp(neighbour.alpha, 0, 1);
 				
-			} else /* there is a stone hit of the same color or of a group that is not dead */{
+			} else /* there is a stone hit of the same color */ {
 				break;
 			}
 		}
