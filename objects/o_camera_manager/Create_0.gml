@@ -14,9 +14,7 @@ window_set_size(CAM_W  * WINDOW_SIZE,
 //var window_height = CAM_H * CAM_SCALE;
 
 //window_set_position(display_width div 2 - window_width div 2, display_height div 2 - window_height div 2);
-
+	
 //display_set_gui_size(CAM_W , CAM_H);
 
 view_set_camera(0, camera);
-
-var fsfsd =4;

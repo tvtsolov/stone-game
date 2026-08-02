@@ -1,25 +1,36 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
+draw_sprite_ext(sprite_index, image_index, x, y, 5, 1, 0, c_white, 1);
 
 var curr_player_ = o_game_manager.current_player;
 
+
 if curr_player_ == o_game_manager.player_black {
 	draw_set_font(Font_1);
-	draw_text_transformed(x+10, y, "Current player: BLACK", 1, 1, 0);
-	
+	draw_set_colour(c_black);
+	draw_text_transformed(x+20, y, "--BLACK's turn--", 1, 1, 0);
 } else if curr_player_ == o_game_manager.player_white {
 	draw_set_font(Font_1);
-	draw_text_transformed(x+10, y, "Current player: WHITE", 1, 1, 0);
+	draw_set_colour(c_white);
+	draw_text_transformed(x+20, y, "--WHITE's turn--", 1, 1, 0);
 }
 
+font_enable_effects(Font_1, false);
 var y_offset_row1 = 54;
 var y_offset_row2 = y_offset_row1*2+20;
 
 //black
-draw_sprite_ext(s_stone, 0 ,x+15, y+y_offset_row1+5, .3, .3, 0, c_white, 1 );
-draw_text_transformed(x+25, y+y_offset_row1, "Hostiges taken by WHITE: " + string(global.black_stones_hostiges), 1, 1, 0);
+//draw_sprite_ext(s_stone, 0 ,x+15, y+y_offset_row1+5, .3, .3, 0, c_white, 1 );
+draw_set_colour(global.c_light_yellow);
+draw_text_transformed(x+25, y+y_offset_row1, "Taken by ", 1, 1, 0);
+draw_set_colour(c_white);
+draw_text_transformed(x+125, y+y_offset_row1, "WHITE: " + string(global.black_stones_hostiges), 1, 1, 0);
 
 //white
-draw_sprite_ext(s_stone_1, 0 ,x+15, y+y_offset_row2+5, .3, .3, 0, c_white, 1 );
-draw_text_transformed(x+25, y+y_offset_row2, "Hostiges taken by BLACK: " + string(global.white_stones_hostiges), 1, 1, 0);
+//draw_sprite_ext(s_stone_1, 0 ,x+15, y+y_offset_row2+5, .3, .3, 0, c_white, 1 );
+draw_set_colour(global.c_light_yellow);
+draw_text_transformed(x+25, y+y_offset_row2, "Taken by",1 ,1, 0);
+draw_set_colour(c_black);
+draw_text_transformed(x+125, y+y_offset_row2, "BLACK: " + string(global.white_stones_hostiges), 1, 1, 0);
+
+

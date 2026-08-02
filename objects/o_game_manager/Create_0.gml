@@ -48,6 +48,8 @@ previous_player = player_white;
 
 
 
+global.c_light_yellow = make_colour_rgb(219, 182, 67);
+
 global.board_start_coordinates	= 20; 
 global.board_size				= BOARD_SIZE;
 global.board_array				= array_create(0);
