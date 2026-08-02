@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_button",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"o_button_board_sizes",
+  "eventList":[],
   "managed":true,
-  "name":"o_button",
+  "name":"o_button_board_sizes",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_button_pass",
-    "path":"sprites/s_button_pass/s_button_pass.yy",
+    "name":"s_button_board_sizes",
+    "path":"sprites/s_button_board_sizes/s_button_board_sizes.yy",
   },
   "spriteMaskId":null,
   "visible":true,

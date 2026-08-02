@@ -48,12 +48,12 @@ previous_player = player_white;
 
 
 
-global.board_start_coordinates = 20; 
-global.board_size		= BOARD_SIZE;
-global.board_array	= array_create(0);
-global.groups			= array_create(0);
-global.empty_zones	= array_create(0);
-global.linked_groups = array_create(0); // the complete linked groups
+global.board_start_coordinates	= 20; 
+global.board_size				= BOARD_SIZE;
+global.board_array				= array_create(0);
+global.groups					= array_create(0);
+global.empty_zones				= array_create(0);
+global.linked_groups			= array_create(0); // the complete linked groups
 
 x=0;
 y=0;
