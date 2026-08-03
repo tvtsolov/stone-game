@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"groups_are_same_color",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Checkers",
+    "path":"folders/Scripts/Checkers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

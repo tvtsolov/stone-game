@@ -1,3 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
-current_player = player_black;
+/// @description Switch to Black
+current_player = PLAYER_B;

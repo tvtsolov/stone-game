@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"show_fields",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Debuggers",
+    "path":"folders/Scripts/Debuggers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

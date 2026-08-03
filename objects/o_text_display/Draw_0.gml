@@ -5,11 +5,11 @@ draw_sprite_ext(sprite_index, image_index, x-5, y-3, 5, 1, 0, c_white, 1);
 var curr_player_ = o_game_manager.current_player;
 
 
-if curr_player_ == o_game_manager.player_black {
+if curr_player_ == PLAYER_B {
 	draw_set_font(Font_1);
 	draw_set_colour(c_black);
 	draw_text_transformed(x+20, y, "--BLACK's turn--", 1, 1, 0);
-} else if curr_player_ == o_game_manager.player_white {
+} else if curr_player_ == PLAYER_W {
 	draw_set_font(Font_1);
 	draw_set_colour(c_white);
 	draw_text_transformed(x+20, y, "--WHITE's turn--", 1, 1, 0);

@@ -4,6 +4,9 @@
 #macro FIELD global.board_array
 #macro GROUPS global.groups
 #macro BOARD_SIZE 9
+#macro PLAYER_B o_game_manager.player_black
+#macro PLAYER_W o_game_manager.player_white
+
 
 enum color_type {
 	black = -1, 
@@ -12,7 +15,7 @@ enum color_type {
 
 enum stage {
 	playing		= 1,
-	counting		= 2,
+	counting	= 2,
 	end_of_game = 3
 	
 }
@@ -35,13 +38,17 @@ draw_surrounded_empty_fields = false;
 
 global.board_states_history = [];
 
-player_black = instance_create_layer(-10, -10, "Instances", o_player);
+//create black player
+player_black		= instance_create_layer(-10, -10, "Instances", o_player);
 player_black.color_ = color_type.black;
-player_black.pass = false;
+player_black.pass	= false;
 
-player_white = instance_create_layer(-20, -10, "Instances", o_player);
+//create white player
+player_white		= instance_create_layer(-20, -10, "Instances", o_player);
 player_white.color_ = color_type.white;
-player_white.pass = false;
+player_white.pass	= false;
+
+number_of_passes = 0;
 
 current_player = player_black;
 previous_player = player_white;

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"get_new_elements",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Getters",
+    "path":"folders/Scripts/Getters.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

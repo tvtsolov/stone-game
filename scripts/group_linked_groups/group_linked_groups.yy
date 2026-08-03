@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"group_linked_groups",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"GroupMakers",
+    "path":"folders/Scripts/GroupMakers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

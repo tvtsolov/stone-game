@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"copy_field",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Copyers",
+    "path":"folders/Scripts/Copyers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

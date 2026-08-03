@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"update_stones_group_refs_in_group",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Updaters",
+    "path":"folders/Scripts/Updaters.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

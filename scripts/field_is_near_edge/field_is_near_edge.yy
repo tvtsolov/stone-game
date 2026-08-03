@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"field_is_near_edge",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Checkers",
+    "path":"folders/Scripts/Checkers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"mark_dead_groups_pre_influence_calc",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Constructors",
+    "path":"folders/Scripts/Constructors.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

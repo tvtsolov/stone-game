@@ -1,5 +1,6 @@
-	/// @description 
-	
+/// @description Estimate score draw
+// also shows the score in the console
+
 	
 	group_linked_groups();						// fills global.linked_groups
 	add_edges_to_groups();						// currently only adds the stones touching the edges to edges[] per group

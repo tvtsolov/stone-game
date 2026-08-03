@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"group_empty_zones",
+  "%Name":"state_play",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"group_empty_zones",
+  "name":"state_play",
   "parent":{
-    "name":"GroupMakers",
-    "path":"folders/Scripts/GroupMakers.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

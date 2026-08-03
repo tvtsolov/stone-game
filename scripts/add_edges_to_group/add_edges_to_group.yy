@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"add_edges_to_group",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Adders",
+    "path":"folders/Scripts/Adders.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

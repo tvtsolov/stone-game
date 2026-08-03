@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"set_board_state",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Setters",
+    "path":"folders/Scripts/Setters.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

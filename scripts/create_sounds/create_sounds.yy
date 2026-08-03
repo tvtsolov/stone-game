@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"create_sounds",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Sounds",
+    "path":"folders/Scripts/Sounds.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

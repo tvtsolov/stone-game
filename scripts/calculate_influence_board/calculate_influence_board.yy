@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"calculate_influence_board",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Calculators",
+    "path":"folders/Scripts/Calculators.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
