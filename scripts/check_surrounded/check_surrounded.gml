@@ -23,7 +23,7 @@ function check_surrounded(group_to_check){
 				} else {
 					//edge field;
 				}
-				if field.col < 8 {
+				if field.col < BOARD_SIZE-1 {
 					//-------------------RIGHT exists
 					var stone = FIELD[field.row][field.col+1].stone;
 					if stone != noone {
@@ -38,7 +38,7 @@ function check_surrounded(group_to_check){
 				} else {
 					//edge field;
 				}
-				if field.row < 8 {
+				if field.row < BOARD_SIZE-1 {
 					//-------------------DOWN exists
 					var stone = FIELD[field.row+1][field.col].stone;
 					if stone != noone {

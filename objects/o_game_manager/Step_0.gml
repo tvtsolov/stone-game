@@ -1,6 +1,13 @@
 temp_target = noone;
 is_allowed = true;
 
+
+//if BOARD_SIZE = 13 and !set {
+//	window_set_size(CAM_W  * WINDOW_SIZE * 2, 
+//					CAM_H  * WINDOW_SIZE * 2);
+//	set = true;
+//}
+
 if fullscreen {
 	window_set_fullscreen(true);
 } else {
@@ -17,7 +24,6 @@ if game_stage = stage.playing {
 }	else if game_stage = stage.counting {
 	
 }
-
 
 run_sounds();
 

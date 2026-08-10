@@ -4,8 +4,6 @@
 
 
 
-
-
 if player1pass {
 	//draw text ext 	
 } else if player2pass {
