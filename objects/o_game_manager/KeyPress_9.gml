@@ -3,9 +3,9 @@
 
 	
 	group_linked_groups();						// fills global.linked_groups
-	add_edges_to_groups();						// currently only adds the stones touching the edges to edges[] per group
-	
-	mark_dead_groups_pre_influence_calc(); // need to check if all linked groups are not also dead
+	add_edges_to_groups();						
+	show_debug_message("help");
+	mark_dead_groups_pre_influence_calc();		// need to check if all linked groups are not also dead
 	
 	group_empty_zones(); 
 	

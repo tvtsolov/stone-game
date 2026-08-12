@@ -1,7 +1,6 @@
 function calculate_influence_field(field){
 	
-
-		var row		= field.row;
+	var row		= field.row;
 		var col		= field.col;
 		var color	= field.stone.color_;
 		

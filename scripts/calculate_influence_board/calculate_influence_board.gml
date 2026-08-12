@@ -3,7 +3,6 @@ function calculate_influence_board(){
 	
 	var size = array_length(global.groups);
 	
-	
 	for (var i = 0; i < size; ++i) {
 		var group = global.groups[i];
 		

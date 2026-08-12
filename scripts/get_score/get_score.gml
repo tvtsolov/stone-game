@@ -2,7 +2,7 @@
 
 function get_score(){
 	
-	var zones =	global.board_array; // dead zones are not calculated here
+	var zones =	global.board_fields_array; // dead zones are not calculated here
 	var size = global.board_size;
 	var score_white				= 0;
 	var score_black				= 0;

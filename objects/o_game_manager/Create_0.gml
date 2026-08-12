@@ -1,9 +1,9 @@
 
 #macro SOUNDS global.sounds
 #macro PREVIOUS_STATES global.board_states_history
-#macro FIELD global.board_array
+#macro FIELD global.board_fields_array
 #macro GROUPS global.groups
-#macro BOARD_SIZE 13
+#macro BOARD_SIZE global.board_size
 #macro PLAYER_B o_game_manager.player_black
 #macro PLAYER_W o_game_manager.player_white
 #macro CURRENT_PLAYER = o_game_manager.current_player
@@ -59,26 +59,15 @@ set = false;
 global.c_light_yellow = make_colour_rgb(219, 182, 67);
 
 global.board_start_coordinates	= 20; 
-global.board_size				= BOARD_SIZE;
-global.board_array				= array_create(0);
+global.board_size				= 0;
+global.board_fields_array				= array_create(0);
 global.groups					= array_create(0);
 global.empty_zones				= array_create(0);
 global.linked_groups			= array_create(0); // the complete linked groups
 
 board_sprite = s_board_9x9
 
-switch (global.board_size) {
-	case 9 :
-	{ board_sprite = s_board_9x9 }
-	break;
-	case 13 :
-	{ board_sprite = s_board_13x13 }
-	break;
-	case 19 :
-	{ }
-	break;
-	
-}
+
 
 x=0;
 y=0;

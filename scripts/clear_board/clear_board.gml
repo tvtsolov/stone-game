@@ -1,6 +1,6 @@
 function clear_board(){
 	
-	var fields_arr = global.board_array;
+	var fields_arr = global.board_fields_array;
 	var size = global.board_size;
 	
 	for (var i = 0; i < size; ++i) {

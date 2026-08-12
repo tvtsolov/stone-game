@@ -4,7 +4,7 @@ function mark_disputed(){
 	
 	//if field.black_influence > 0 and field.white_influence > 0
 	
-	var fields = global.board_array;
+	var fields = global.board_fields_array;
 	var size = global.board_size;
 	
 for (var i = 0; i < size; ++i) {
