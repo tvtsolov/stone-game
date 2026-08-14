@@ -29,7 +29,7 @@ function state_play(){
 	
 		
 			var stone_type =  current_player = PLAYER_B ? o_stone_black : o_stone_white;
-			var stone_ = instance_create_layer(played_field.x, played_field.y, "Instances", stone_type);
+			var stone_ = instance_create_layer(played_field.x, played_field.y, "stones", stone_type);
 			played_field.stone = stone_;
 		
 

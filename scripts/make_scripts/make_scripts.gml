@@ -38,6 +38,9 @@ function make_scripts(){
 		element.eyes = [];	
 	}
 	
+	mark_all_stones_dead = function (field) {
+		field.stone.dead = true;	
+	}
 	
 
 }
