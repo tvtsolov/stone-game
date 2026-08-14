@@ -1,5 +1,4 @@
 
-window_center();
 
 
 if room = Menu {

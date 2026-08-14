@@ -1,5 +1,5 @@
 if room = Board {
-	
+	//drawing the influence
 	if draw_surrounded_empty_fields {
 	
 	var draw_mark = function(element) {
@@ -35,16 +35,16 @@ if room = Board {
 						draw_sprite_ext(sprite_influence, 0, item.x, item.y, 1, 1, 0, c_white, 1);
 					}
 				}
-			} else /* if a stone */ {
+			} else /* if a stone and dead, drawing dead stones*/  {
 				if item.stone != noone and item.stone.group_.is_dead {
 				
 					sprite_influence = noone;
 					
 					if item.black_influence > 0 and  item.white_influence == 0 {
-						sprite_influence = s_infl_b;
+						sprite_influence = s_infl_b_dead_white_stone;
 					} 
 					else if item.white_influence > 0 and item.black_influence == 0 {
-						sprite_influence = s_infl_w;
+						sprite_influence = s_infl_w_dead_black_stone;
 					}
 				
 					if sprite_influence != noone {

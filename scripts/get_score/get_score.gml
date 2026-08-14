@@ -2,7 +2,7 @@
 
 function get_score(){
 	
-	var zones =	global.board_fields_array; // dead zones are not calculated here
+	//var zones =	global.board_fields_array; 
 	var size = global.board_size;
 	var score_white				= 0;
 	var score_black				= 0;
@@ -15,8 +15,8 @@ function get_score(){
 			var w_influenced = 0;
 			var b_influenced = 0;
 
-			
-			if field.empty_zone != noone and field.empty_zone.disputed {
+			// this resets the influences to 0 if the area is disputed and empty
+			if field.empty_zone != noone and field.empty_zone.disputed {  //empty_zone holds a reference to one of the empty zones if it's an empty zone
 				// if one field has disputed area, skip the zone completely
 				b_influenced = 0;
 				w_influenced = 0;
@@ -29,6 +29,28 @@ function get_score(){
 				if field.stone != noone and field.stone.group_.is_dead {
 					if group_is_in_disputed_teritory(field.stone.group_){
 						continue;	
+					} else { //if they are surrounded, and it's clear this is the oponent's teritory
+						var outside_influence = get_all_fields_around_group(field.stone.group_);
+						if outside_influence[0].white_influence > outside_influence[0].black_influence {
+							outside_influence = color_type.white;
+						} else {
+							outside_influence = color_type.black;
+						}
+						
+						var col = field.stone.color_;
+						if col = -1 {
+							if outside_influence =  color_type.white {
+								score_white ++;
+							} else {
+								// not necessary?
+							}
+						} else if col = 1 {
+							if outside_influence =  color_type.black {
+								score_black ++;
+							} else {
+								// not necessary?
+							}
+						}
 					}
 				}
 				
@@ -58,6 +80,8 @@ function get_score(){
 			b_influenced = 0;
 		}
 	}
+	
+	
 	
 	global.score_zones_white += score_white + global.black_stones_hostiges;
 	

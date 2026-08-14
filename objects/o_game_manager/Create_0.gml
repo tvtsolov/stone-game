@@ -205,3 +205,5 @@ function Chained_group(groups_) constructor {
 	
 }
 
+window_center();
+

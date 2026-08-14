@@ -4,7 +4,7 @@
 	
 	group_linked_groups();						// fills global.linked_groups
 	add_edges_to_groups();						
-	show_debug_message("help");
+	
 	mark_dead_groups_pre_influence_calc();		// need to check if all linked groups are not also dead
 	
 	group_empty_zones(); 
@@ -24,7 +24,6 @@
 	show_debug_message("BLACK: " + string(global.score_zones_black));
 	show_debug_message("WHITE: " + string(global.score_zones_white));
 	
-	//DRAWING THE INFLUENCE
 	for (var i = 0; i < number_of_zones; ++i) {
 		var fields = global.empty_zones[i].fields_;
 		array_foreach(fields, set_empty_mark);	 
