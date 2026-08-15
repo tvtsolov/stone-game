@@ -12,12 +12,8 @@ function mark_dead_groups_pre_influence_calc(){
 			if group_size <= 4 
 			{
 				group.is_dead = true;
-				array_foreach(group.fields_, mark_all_stones_dead);
-				
+				//array_foreach(group.fields_, mark_all_stones_dead);
 			}
 		}
 	}
-	
-
-
 }

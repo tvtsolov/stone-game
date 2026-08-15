@@ -25,6 +25,7 @@
 	array_foreach(global.groups, clear_dead_zone_flag);
 	array_foreach(global.groups, clear_secured_tag);
 	array_foreach(global.groups, remove_all_eyes);
+	//array_foreach(global.groups, reset_dead_groups);
 	
 	//clear checked flag (this flag is used for collecting the linked groups)
 	array_foreach(global.groups, clear_checked_flag);

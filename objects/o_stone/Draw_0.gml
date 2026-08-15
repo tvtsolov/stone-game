@@ -1,4 +1,4 @@
-if dead {
+if group_.is_dead {
 	image_alpha = .5;
 	draw_self(); 
 	image_alpha = 1;

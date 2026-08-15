@@ -34,6 +34,10 @@ function make_scripts(){
 		element.secured = false;	
 	}
 	
+	//reset_dead_groups = function(element) {
+	//	element.dead = false;
+	//}
+	
 	remove_all_eyes = function(element) {
 		element.eyes = [];	
 	}
