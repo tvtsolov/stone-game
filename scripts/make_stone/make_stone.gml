@@ -7,7 +7,7 @@ function make_stone(field_, color_, group_){
 				stone_type = o_stone_white;
 			}
 			
-		var temp_stone = instance_create_layer(field_.x,field_.y, "Instances", stone_type);
+		var temp_stone = instance_create_layer(field_.x,field_.y, "stones", stone_type);
 		temp_stone.group_ = group_;
 		return temp_stone;
 }
