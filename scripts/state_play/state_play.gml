@@ -1,15 +1,8 @@
 function state_play(){
 	if mouse_check_button_pressed(mb_left){
-		if current_player.pass {
-			if PLAYER_B.pass and PLAYER_W.pass {
-				game_stage = stage.counting;
-			} 
-			next_player_turn();
-			exit;
-		} else {
-			previous_player.pass = false;
-		}
-		
+
+		previous_player.pass = false;
+
 		var played_field = collision_point(mouse_x, mouse_y, o_field, false, true);
 
 		if played_field != noone and played_field.stone = noone
@@ -34,10 +27,10 @@ function state_play(){
 		
 
 			// make new groups and remove stones if any are surrounded
-			check_board(stone_, played_field);
+			check_board(stone_, played_field, prev_state);
 
 			//check if old state can be compared and compare it to see if move is allowed
-			if prev_state != -1 {
+			if prev_state != -1 { //if this is not the very first state
 			
 				var new_state = create_mock_state_from_current_state(current_player);
 				activate_state(prev_state);
@@ -53,25 +46,22 @@ function state_play(){
 			
 				//this one is a reference to a history point, no need to clean it up
 				deactivate_state(prev_state);
-
 			}
 
 			if is_allowed {
 				//play sounds
-			
-		
 				SOUNDS[random_range(0, 4)].play = true;
-		
 				//save this state in the history
-				var mock_state = create_mock_state_from_current_state(current_player);
-				deactivate_state(mock_state);
-			   array_push(PREVIOUS_STATES, mock_state);	
-			
-			
+				save_current_state_to_history();
 				//new turn, new player
+				global.black_stones_hostiges += temp_black_hostiges;
+				global.white_stones_hostiges += temp_white_hostiges;
+				temp_black_hostiges = 0;
+				temp_white_hostiges = 0;
 				next_player_turn();
 			} else {
-		
+				temp_black_hostiges = 0;
+				temp_white_hostiges = 0;
 				var curr_state = create_mock_state_from_current_state(current_player);
 				deactivate_state(curr_state);
 				delete curr_state;

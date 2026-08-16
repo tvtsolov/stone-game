@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"save_current_state_to_history",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"save_current_state_to_history",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

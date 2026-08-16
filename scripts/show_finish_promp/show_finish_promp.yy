@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"show_finish_promp",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"show_finish_promp",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

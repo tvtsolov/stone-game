@@ -23,6 +23,7 @@ else if room = Board {
 		window_set_fullscreen(false);
 	}
 
+
 	if current_player.pass {
 		next_player_turn();
 		previous_player.pass = false;
@@ -33,7 +34,11 @@ else if room = Board {
 	}	else if game_stage = stage.counting {
 	
 	}
-
+	
+	if number_of_passes > 1 and !instance_exists(o_prompt) {
+		save_current_state_to_history();
+		show_finish_promp();
+	}
 }
 
 run_sounds();

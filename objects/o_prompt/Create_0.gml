@@ -1,0 +1,1 @@
+buttons = array_create(0);

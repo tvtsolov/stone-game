@@ -17,7 +17,6 @@ enum stage {
 	playing		= 1,
 	counting	= 2,
 	end_of_game = 3
-	
 }
 
 
@@ -67,6 +66,8 @@ global.linked_groups			= array_create(0); // the complete linked groups
 
 board_sprite = s_board_9x9
 
+temp_black_hostiges		= 0;
+temp_white_hostiges	= 0;
 
 
 x=0;
