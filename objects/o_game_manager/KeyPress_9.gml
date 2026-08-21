@@ -13,19 +13,22 @@
 	
 	check_eyes();		
 	
-	calculate_influence_board();		
-
-	var number_of_zones = array_length(global.empty_zones);
+	calculate_influence_board();	
 	
 	mark_disputed();
 	
-	get_score(); 
-	
-	show_debug_message("BLACK: " + string(global.score_zones_black));
-	show_debug_message("WHITE: " + string(global.score_zones_white));
+	calculate_influence_fully();
+
+	var number_of_zones = array_length(global.empty_zones);
 	
 	for (var i = 0; i < number_of_zones; ++i) {
 		var fields = global.empty_zones[i].fields_;
 		array_foreach(fields, set_empty_mark);	 
 	}
+	get_score(); 
+	
+	show_debug_message("BLACK: " + string(global.score_zones_black));
+	show_debug_message("WHITE: " + string(global.score_zones_white));
+	
+
 	draw_surrounded_empty_fields = true;

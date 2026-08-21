@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"Extentions","order":10,"path":"folders/Extentions.yy",},
+    {"name":"Notes","order":12,"path":"folders/Notes.yy",},
     {"name":"Scripts","order":6,"path":"folders/Scripts.yy",},
     {"name":"Adders","order":8,"path":"folders/Scripts/Adders.yy",},
     {"name":"Calculators","order":12,"path":"folders/Scripts/Calculators.yy",},
@@ -40,6 +41,7 @@
     {"name":"add_linked_group_reference","order":4,"path":"scripts/add_linked_group_reference/add_linked_group_reference.yy",},
     {"name":"assign_eye_to_groups","order":5,"path":"scripts/assign_eye_to_groups/assign_eye_to_groups.yy",},
     {"name":"calculate_influence_field","order":1,"path":"scripts/calculate_influence_field/calculate_influence_field.yy",},
+    {"name":"calculate_influence_fully","order":24,"path":"scripts/calculate_influence_fully/calculate_influence_fully.yy",},
     {"name":"check_board","order":1,"path":"scripts/check_board/check_board.yy",},
     {"name":"check_eyes","order":2,"path":"scripts/check_eyes/check_eyes.yy",},
     {"name":"check_if_move_is_allowed","order":23,"path":"scripts/check_if_move_is_allowed/check_if_move_is_allowed.yy",},

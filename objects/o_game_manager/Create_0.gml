@@ -182,8 +182,7 @@ function State(player_, board_, groups_) constructor
 				  instance_destroy(board_state[i][ii]);
 			 }
 		}
-		
-		//TODO clean up all the emty zones as well
+
 	}
 
 }
@@ -193,10 +192,10 @@ function State(player_, board_, groups_) constructor
 function Empty_zone(fields) constructor {
 	
 	fields_				= fields;
-	disputed				= false;
+	disputed			= false;
 	is_real_eye			= false;
-	is_possible_eye	= false;
-	
+	is_possible_eye		= false;
+	main_influence		= noone;
 }
 
 function Chained_group(groups_) constructor {

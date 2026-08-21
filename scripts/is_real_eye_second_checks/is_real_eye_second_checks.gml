@@ -103,9 +103,7 @@ if array_contains(checked, field) {
 		}
 	}
 	else if num_of_liberties == 0 {
-		field.empty_zone.is_real_eye = true; //TODO - needs to check if the group has any other "real eyes on it" (2 of them actually)
-		// if not, it's not a real eye
-		// add to the single group that is surrounding it
+		field.empty_zone.is_real_eye = true;
 		assign_eye_to_groups(field);
 		return true;
 	}

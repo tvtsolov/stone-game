@@ -1,0 +1,198 @@
+FIELD props:
+stone = noone;
+row = -1;
+col = -1;
+
+STONE props:
+object type/color
+
+
+     		-----FIELD-----
+
+#macro FIELD global.board_array
+
+
+
+		----GROUPS-------
+
+#macro GROUPS global.groups
+		
+
+global.groups    GROUPS [Struct array]
+
+=============================
+new Group constructor:
+=============================
+function Group(_color, _fields) constructor 
+{
+	color_		= _color;
+	fields_		= _fields;
+	function clean_up(){
+		var size = array_length(fields_);
+		for (var i = 0; i < size; ++i) {
+		    fields_[i] = 0;
+		}
+		fields_ = [];
+	}
+	linked = false;
+	linked_to = [Group_struct];
+	is_dead = false;
+	edges = [o_field];
+	eyes = [empty_zone_struct];
+	possible_eyes = [empty_zone_struct];
+	secured = false;
+}
+=============================
+		
+var neighbor_groups = array_create(0); [Structs]
+
+making a new Struct Group:
+var gr = new group(fields_, color_type); // make a struct from the array
+  
+
+
+o_field:
+- stone = noone;
+- row = -1;
+- col = -1;
+- white_influence	= 0;
+- black_influence	= 0;
+- empty_zone		= noone;
+- is_empty_field	= false;
+- is_internal_edge	= false;
+- dead 				= false;	
+
+o_stone:
+- group_ = group[Struct] reference
+- color_ = color_type.black; -1 black and 1 white, 
+- chained_group = [[group Struct],[group Struct]]
+
+
+#macro FIELD mock_state.board_state
+#macro GROUPS mock_state.groups {State Struct}
+
+global.linked_groups [] with groups that are linked together
+
+------------------
+Structs:
+------------------
+Group
+- color_ (enum)
+- fields_ [] [o_field]
+- is_dead
+- checked
+- eyes [] - fields
+- edges[] [o_field]
+- linked_to[] [Struct]  (up to 4 other group structs, not all in the chain)
+
+State (board_state / mock_state)
+- current_player
+- board_state (the 2d array of the board with the fields in it) [o_field]
+- state_groups
+
+
+Empty_zone	
+- fields_ 		= [];
+- disputed 		= false;
+- is_real_eye		= false;
+- is_possible_eye 	= false;
+--------------------------
+
+
+JZ74Z5R36
+
+constructors create Structs, not objects
+
+
+Descriptions:
+/// @description	Something something
+/// @param {Id.Instance} 	field_  		Last played field
+/// @param {Bool} 		same 			Get groups of the same color(true) or not(false)
+
+
+
+
+
+
+ temp_groups[i].fields_[ii] = groups_[i].fields_[ii];
+
+
+
+
+implement noself surround unless you are surrounding with this move
+
+
+global.board_states_history
+	- state_groups
+	- current_player
+	- board_state (a board)
+
+
+
+
+get_free_neighbors_around_one_field()  		>>> run on each field, small function
+
+get_surrounded_free_area_fields() 		>>> get the whole area, uses the above function
+
+get_free_neighbors_around_several_fields()	>> check an array of fields and return only the empty neighbours
+
+get_new_elements(arr1, arr2)			>>> extract the fields in arr1 that are not present in arr2
+
+
+
+
+Description syntax:
+/// @description 
+
+
+array_union(array1, array2, array3);
+
+
+
+
+
+
+
+
+if neighbour.stone == noone or (neighbour.stone.group_.is_dead and neighbour.stone.color_ == -color) {
+				if color = color_type.black {
+					neighbour.black_influence += 0.35;
+					clamp(neighbour.black_influence, 0, 1);
+				} else {
+					neighbour.white_influence += 0.35;
+					clamp(neighbour.white_influence, 0, 1);
+				}
+				neighbour.alpha += 0.35;
+				clamp(neighbour.alpha, 0, 1);
+			} else {
+				break;
+			}
+			
+			
+if 
+			neighbour.stone == noone 
+			or 
+			(neighbour.stone.group_.is_dead and neighbour.stone.color_ == -color) 
+			{
+				if color = color_type.black {
+					neighbour.black_influence += 0.35;
+					clamp(neighbour.black_influence, 0, 1);
+				} else {
+					neighbour.white_influence += 0.35;
+					clamp(neighbour.white_influence, 0, 1);
+				}				
+				neighbour.alpha += 0.35;
+				clamp(neighbour.alpha, 0, 1);
+			} else if 
+				neighbour.stone != noone
+				and 
+				neighbour.stone.color_ == -color
+				and
+				array_length(neighbour.stone.linked_to) > 0
+
+			{
+				
+				
+			} else {
+				break;
+			}

@@ -85,7 +85,7 @@ function group_linked_groups(){
 			new_linked_group = new Chained_group(new_linked_group);
 			
 			array_push(global.linked_groups, new_linked_group);
-			// TODO add edges to linked_groups per linked group?
+			
 		}
 	}
 }

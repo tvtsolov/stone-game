@@ -64,8 +64,9 @@ function check_surrounded_and_remove(neighbour_groups, self_group, prev_state){
 				fld_to_empty.stone = noone;
 			
 				//delete GROUPS[index];
-				array_delete(GROUPS, index, 1);
+				
 			}
+			array_delete(GROUPS, index, 1);
 		}
 	}
 	

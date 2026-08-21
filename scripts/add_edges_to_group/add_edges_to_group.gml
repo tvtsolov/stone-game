@@ -18,13 +18,6 @@ function add_edges_to_group(group){
 			}
 			
 			
-			//TODO needs to be completed, at the moment only the group stones touching the 
-			//edges of the board are taken
-		
-	
-		
-			// if we have more than one edge touching stone in the group it means that 
-			// the surrounded group is surrounding some edges
 
 	}
 }

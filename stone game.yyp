@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Extentions","folderPath":"folders/Extentions.yy","name":"Extentions","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -41,6 +42,7 @@
   "resources":[
     {"id":{"name":"Steamworks","path":"extensions/Steamworks/Steamworks.yy",},},
     {"id":{"name":"Font_1","path":"fonts/Font_1/Font_1.yy",},},
+    {"id":{"name":"Documentation","path":"notes/Documentation/Documentation.yy",},},
     {"id":{"name":"o_button_board_sizes","path":"objects/o_button_board_sizes/o_button_board_sizes.yy",},},
     {"id":{"name":"o_camera_manager","path":"objects/o_camera_manager/o_camera_manager.yy",},},
     {"id":{"name":"o_edge","path":"objects/o_edge/o_edge.yy",},},
@@ -69,6 +71,7 @@
     {"id":{"name":"assign_eye_to_groups","path":"scripts/assign_eye_to_groups/assign_eye_to_groups.yy",},},
     {"id":{"name":"calculate_influence_board","path":"scripts/calculate_influence_board/calculate_influence_board.yy",},},
     {"id":{"name":"calculate_influence_field","path":"scripts/calculate_influence_field/calculate_influence_field.yy",},},
+    {"id":{"name":"calculate_influence_fully","path":"scripts/calculate_influence_fully/calculate_influence_fully.yy",},},
     {"id":{"name":"check_and_mark_secured_groups","path":"scripts/check_and_mark_secured_groups/check_and_mark_secured_groups.yy",},},
     {"id":{"name":"check_board","path":"scripts/check_board/check_board.yy",},},
     {"id":{"name":"check_eyes","path":"scripts/check_eyes/check_eyes.yy",},},

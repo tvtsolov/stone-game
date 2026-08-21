@@ -1,4 +1,5 @@
-///@ descr
+///@ descr returns an array of all fields arround the provided group 
+///@ descr (except diagonal neighbors) including ones with stones
 
 function get_all_fields_around_group(group_){
 	var result = [];
