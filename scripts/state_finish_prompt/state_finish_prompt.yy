@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"state_play",
+  "%Name":"state_finish_prompt",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"state_play",
+  "name":"state_finish_prompt",
   "parent":{
     "name":"States",
     "path":"folders/Scripts/States.yy",

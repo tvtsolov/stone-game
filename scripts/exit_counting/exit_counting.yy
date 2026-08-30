@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"state_play",
+  "%Name":"exit_counting",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"state_play",
+  "name":"exit_counting",
   "parent":{
-    "name":"States",
-    "path":"folders/Scripts/States.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

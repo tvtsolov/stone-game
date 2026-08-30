@@ -57,11 +57,11 @@ function get_score(){
 				//do nothing			
 			} else if w_infl > 0 and b_infl == 0 {
 				if own_color == -1 { //if surrounded by the oposite color only
-					white_score += size_of_dead_group;
+					white_score += size_of_dead_group*2;
 				}
 			} else if b_infl > 0 and w_infl == 0 {
 				if own_color == 1 {  //if surrounded by the oposite color only
-					black_score += size_of_dead_group;
+					black_score += size_of_dead_group*2;
 				}
 			}
 		}

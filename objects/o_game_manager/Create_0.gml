@@ -14,9 +14,10 @@ enum color_type {
 }
 
 enum stage {
-	playing		= 1,
-	counting	= 2,
-	end_of_game = 3
+	playing			= 1,
+	counting		= 2,
+	end_of_game		= 3,
+	finish_prompt	= 4
 }
 
 

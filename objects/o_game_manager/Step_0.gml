@@ -32,12 +32,33 @@ else if room = Board {
 	if game_stage = stage.playing {
 		state_play();
 	}	else if game_stage = stage.counting {
-	
+		state_count();
+	}	else if game_stage = stage.finish_prompt {
+		state_finish_prompt();
+		
+		if mouse_check_button(mb_left){
+			
+			collision_point(mouse_x, mouse_y, o_interactive_surface_button, true , true) {
+		
+			if o_interactive_surface_button.action = "back" {
+				instance_destroy(o_prompt);
+				number_of_passes = 0;
+				game_stage = stage.playing;
+				instance_activate_layer("fields");
+				exit;
+			} else if o_interactive_surface_button.action = "finish" {
+				number_of_passes = 0;
+				instance_destroy(o_prompt);	
+				game_stage = stage.counting;
+			}
+		}
+	}
+		
 	}
 	
 	if number_of_passes > 1 and !instance_exists(o_prompt) {
 		save_current_state_to_history();
-		show_finish_promp();
+		game_stage = stage.finish_prompt;
 	}
 }
 

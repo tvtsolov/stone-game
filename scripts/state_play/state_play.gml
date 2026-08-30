@@ -75,5 +75,7 @@ function state_play(){
 				set_board_state(init_state);
 			}
 		}
+		
+		
 	}
 }
