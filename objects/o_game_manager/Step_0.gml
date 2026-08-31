@@ -32,6 +32,7 @@ else if room = Board {
 	if game_stage = stage.playing {
 		state_play();
 	}	else if game_stage = stage.counting {
+		activate_all_current_fields();
 		state_count();
 	}	else if game_stage = stage.finish_prompt {
 		state_finish_prompt(); // deactivates all fields on the "fields" layer
