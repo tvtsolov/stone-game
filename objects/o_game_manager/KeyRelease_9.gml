@@ -1,4 +1,4 @@
 /// @description Stop drawing estimate score
 
 	
-exit_counting();
+// exit_counting();

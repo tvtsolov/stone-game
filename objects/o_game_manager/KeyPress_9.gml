@@ -2,6 +2,6 @@
 // also shows the score in the console
 
 	
-go_to_counting();
+// go_to_counting();
 
 

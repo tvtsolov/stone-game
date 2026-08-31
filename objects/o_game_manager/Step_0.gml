@@ -34,24 +34,25 @@ else if room = Board {
 	}	else if game_stage = stage.counting {
 		state_count();
 	}	else if game_stage = stage.finish_prompt {
-		state_finish_prompt();
+		state_finish_prompt(); // deactivates all fields on the "fields" layer
 		
-		if mouse_check_button(mb_left){
-			
-			collision_point(mouse_x, mouse_y, o_interactive_surface_button, true , true) {
-		
-			if o_interactive_surface_button.action = "back" {
-				instance_destroy(o_prompt);
-				number_of_passes = 0;
-				game_stage = stage.playing;
-				instance_activate_layer("fields");
-				exit;
-			} else if o_interactive_surface_button.action = "finish" {
-				number_of_passes = 0;
-				instance_destroy(o_prompt);	
-				game_stage = stage.counting;
+		if mouse_check_button(mb_left){		
+			var but_ = collision_point(mouse_x, mouse_y, o_interactive_surface_button, true , true) {
+				if but_ != noone {
+					if but_.action = "back" {
+						instance_destroy(o_prompt);
+						number_of_passes = 0;
+						game_stage = stage.playing;
+						instance_activate_layer("fields");
+						exit;
+					} else if but_.action = "finish" {
+						number_of_passes = 0;
+						instance_destroy(o_prompt);
+						game_stage = stage.counting;
+						// groups are not made with stones?
+					}
+				}
 			}
-		}
 	}
 		
 	}
@@ -65,3 +66,5 @@ else if room = Board {
 run_sounds();
 
 
+show_stones();
+show_fields();

@@ -3,5 +3,10 @@ if group_.is_dead {
 	draw_self(); 
 	image_alpha = 1;
 } else {
+	if !outline {
+		image_index = 0;
+	} else {
+		image_index = 1;
+	}
 	draw_self();
 }

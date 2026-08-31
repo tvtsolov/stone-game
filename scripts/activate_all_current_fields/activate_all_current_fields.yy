@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"activate_all_current_fields",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"activate_all_current_fields",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,2 +1,1 @@
-clicked = false;
 action = noone;
