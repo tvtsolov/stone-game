@@ -80,6 +80,7 @@
     {"id":{"name":"check_if_move_is_allowed","path":"scripts/check_if_move_is_allowed/check_if_move_is_allowed.yy",},},
     {"id":{"name":"check_if_real_eye","path":"scripts/check_if_real_eye/check_if_real_eye.yy",},},
     {"id":{"name":"check_matching_eyes_in_two_groups","path":"scripts/check_matching_eyes_in_two_groups/check_matching_eyes_in_two_groups.yy",},},
+    {"id":{"name":"check_mouse_input_on_counting_groups","path":"scripts/check_mouse_input_on_counting_groups/check_mouse_input_on_counting_groups.yy",},},
     {"id":{"name":"check_neighbours_make_groups","path":"scripts/check_neighbours_make_groups/check_neighbours_make_groups.yy",},},
     {"id":{"name":"check_shared_eyes_mark_secured","path":"scripts/check_shared_eyes_mark_secured/check_shared_eyes_mark_secured.yy",},},
     {"id":{"name":"check_surrounded_and_remove","path":"scripts/check_surrounded_and_remove/check_surrounded_and_remove.yy",},},

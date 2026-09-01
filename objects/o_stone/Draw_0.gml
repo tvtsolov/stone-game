@@ -1,19 +1,14 @@
+draw_self();
+
 if group_.is_dead {
-	image_alpha = .5;
-	draw_self(); 
-	image_alpha = 1;
-	
-	if !outline {
-		image_index = 0;
-	} else {
-		image_index = 1;
-	}
-	
+	image_alpha = .8;
 } else {
-	if !outline {
-		image_index = 0;
-	} else {
-		image_index = 1;
-	}
-	draw_self();
+	image_alpha = 1;
+}
+
+
+if !group_.outlined {
+	image_index = 0;
+} else {
+	image_index = 1;
 }

@@ -92,13 +92,15 @@ function Group(_color, _fields) constructor
 		}
 		fields_ = [];
 	}
-	linked_to = [];
-	edges = [];
-	eyes = [];
-	possible_eyes = [];
-	is_dead = false;
-	checked = false; // multipurpose flag
-	secured = false;
+	linked_to		= [];
+	edges			= [];
+	eyes			= [];
+	possible_eyes	= [];
+	is_dead			= false;
+	checked			= false; // multipurpose flag
+	secured			= false;
+	outlined		= false;
+	switched		= false;
 }
 
 /// @param {Id.Instance} 	player_  		Last played field

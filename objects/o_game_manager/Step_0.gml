@@ -54,8 +54,7 @@ else if room = Board {
 					}
 				}
 			}
-	}
-		
+		}
 	}
 	
 	if number_of_passes > 1 and !instance_exists(o_prompt) {
@@ -66,6 +65,7 @@ else if room = Board {
 
 run_sounds();
 
+check_mouse_input_on_counting_groups();
 
-show_stones();
-show_fields();
+//show_stones();
+//show_fields();

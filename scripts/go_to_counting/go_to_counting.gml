@@ -36,19 +36,7 @@ function go_to_counting(){
 		// TODO keep drawing them like this
 	} else {
 		activate_all_current_fields();
-		// allow players to mark dead groups, and unmark dead groups with the mouse
-		//var fld = collision_point(mouse_x, mouse_y, o_field, true, false)  {
-		//	if  fld != noone {
-		//		if fld.stone != noone {
-		//			var group_hovered = fld.stone.group_;	
-		//			var fields_arr =  group_hovered.fields_;
-		//			var size_ =  array_length(fields_arr);
-		//			for (var i = 0; i < size_; ++i) {
-		//				var curr_fld = fields_arr[i];
-		//				curr_fld.stone.outline = true;
-		//			}
-		//		}
-		//	}
-		//}
+		// now the field objects can check if the game_stage is counting and allow for the selection and change of dead groups
+		
 	}
 }

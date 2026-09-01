@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"check_mouse_input_on_counting_groups",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"check_mouse_input_on_counting_groups",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

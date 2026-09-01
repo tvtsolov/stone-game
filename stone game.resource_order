@@ -51,6 +51,7 @@
     {"name":"check_if_move_is_allowed","order":23,"path":"scripts/check_if_move_is_allowed/check_if_move_is_allowed.yy",},
     {"name":"check_if_real_eye","order":3,"path":"scripts/check_if_real_eye/check_if_real_eye.yy",},
     {"name":"check_matching_eyes_in_two_groups","order":4,"path":"scripts/check_matching_eyes_in_two_groups/check_matching_eyes_in_two_groups.yy",},
+    {"name":"check_mouse_input_on_counting_groups","order":32,"path":"scripts/check_mouse_input_on_counting_groups/check_mouse_input_on_counting_groups.yy",},
     {"name":"check_neighbours_make_groups","order":5,"path":"scripts/check_neighbours_make_groups/check_neighbours_make_groups.yy",},
     {"name":"check_shared_eyes_mark_secured","order":6,"path":"scripts/check_shared_eyes_mark_secured/check_shared_eyes_mark_secured.yy",},
     {"name":"check_surrounded_and_remove","order":8,"path":"scripts/check_surrounded_and_remove/check_surrounded_and_remove.yy",},
