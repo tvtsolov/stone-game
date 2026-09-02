@@ -1,4 +1,4 @@
-function exit_counting(){
+function reset_counting(){
 	draw_surrounded_empty_fields = false;
 	
 	//clear empty zone tag

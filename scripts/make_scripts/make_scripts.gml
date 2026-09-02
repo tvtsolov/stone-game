@@ -19,7 +19,9 @@ function make_scripts(){
 	}
 	
 	clear_dead_zone_flag = function(element) {
-		element.is_dead = false;
+		if !o_game_manager.negotiation_phase {
+			element.is_dead = false;
+		}
 	}
 	
 	clear_checked_flag = function(element) {

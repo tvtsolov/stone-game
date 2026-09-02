@@ -1,11 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"o_prompt",
+  "%Name":"o_finalize_game_button",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_prompt",
+  "name":"o_finalize_game_button",
   "overriddenProperties":[],
   "parent":{
     "name":"buttons",
@@ -30,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_finish_game_prompt",
-    "path":"sprites/s_finish_game_prompt/s_finish_game_prompt.yy",
+    "name":"s_finalize_game_button",
+    "path":"sprites/s_finalize_game_button/s_finalize_game_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

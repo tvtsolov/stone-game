@@ -31,6 +31,7 @@ for (var i = 0; i < size; ++i) {
 		var infl = 0;
 		var empty_zone = (global.empty_zones[i]);
 		var zone_size = array_length(empty_zone.fields_);
+		
 		for (var ii = 0; ii < zone_size; ++ii) {
 
 			var field = empty_zone.fields_[ii];
@@ -55,7 +56,6 @@ for (var i = 0; i < size; ++i) {
 				}
 			}
 				
-			
 			if (field.black_influence > 0 and field.white_influence > 0)
 			or
 			(infl == 1 and field.black_influence > 0)
@@ -66,10 +66,5 @@ for (var i = 0; i < size; ++i) {
 				break;
 			}
 		}
-		 
-		 
 	}
-	
-	
-
 }

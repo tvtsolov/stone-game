@@ -3,9 +3,10 @@ function go_to_counting(){
 	if !counting_finished {
 		group_linked_groups();						// fills global.linked_groups
 		add_edges_to_groups();						
-	
-		mark_dead_groups_pre_influence_calc();		// need to check if all linked groups are not also dead
-	
+		
+		if !negotiation_phase {
+			mark_dead_groups_pre_influence_calc();		// need to check if all linked groups are not also dead
+		}
 		group_empty_zones(); 
 	
 		add_linked_group_reference();	
@@ -26,10 +27,6 @@ function go_to_counting(){
 		}
 	
 		get_score(); 
-	
-		show_debug_message("BLACK: " + string(global.score_zones_black));
-		show_debug_message("WHITE: " + string(global.score_zones_white));
-	
 
 		draw_surrounded_empty_fields = true;
 		counting_finished = true;

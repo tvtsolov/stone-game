@@ -20,7 +20,9 @@ enum stage {
 	finish_prompt	= 4
 }
 
-counting_finished = false;
+counting_finished	= false;
+negotiation_phase	= false;
+
 fullscreen = false;
 
 global.score_zones_white = 0;
