@@ -1,6 +1,5 @@
 
 
-
 if room = Menu {
 	
 	if !instance_exists(o_menu) {
@@ -29,6 +28,8 @@ else if room = Board {
 		previous_player.pass = false;
 	}
 
+// go to game stage:
+
 	if game_stage = stage.playing {
 		state_play();
 	}	else if game_stage = stage.counting {
@@ -50,11 +51,13 @@ else if room = Board {
 						number_of_passes = 0;
 						instance_destroy(o_prompt);
 						game_stage = stage.counting;
-						// groups are not made with stones?
+						instance_activate_object(o_finalize_game_button);
 					}
 				}
 			}
 		}
+	}	else if game_stage = stage.end_of_game {
+		
 	}
 	
 	if number_of_passes > 1 and !instance_exists(o_prompt) {

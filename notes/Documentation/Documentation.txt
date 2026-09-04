@@ -196,3 +196,10 @@ if
 			} else {
 				break;
 			}
+			
+			
+cameras
+
+the camera size is bound by the viewport size, if the port is not big enough, the camera won't show anything outside of it
+
+camera_create_view needs viewports to be enabled and at least one viewport to be ticked 

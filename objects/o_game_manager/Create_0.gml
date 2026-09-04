@@ -22,8 +22,8 @@ enum stage {
 
 counting_finished	= false;
 negotiation_phase	= false;
-
-fullscreen = false;
+finalized			= false;
+fullscreen			= false;
 
 global.score_zones_white = 0;
 global.black_stones_hostiges = 0;
@@ -60,7 +60,7 @@ set = false;
 
 global.c_light_yellow = make_colour_rgb(219, 182, 67);
 
-global.board_start_coordinates	= 20; 
+global.board_start_coordinates	= 40; 
 global.board_size				= 0;
 global.board_fields_array				= array_create(0);
 global.groups					= array_create(0);

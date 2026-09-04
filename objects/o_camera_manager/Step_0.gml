@@ -1,16 +1,6 @@
 
 
+//camera_set_view_pos(CAMERA, 0, 0);
 
 
-
-//camera_set_view_size(camera, CAM_W * CAM_SCALE, CAM_H * CAM_SCALE);
-
-
-
-
-view_set_camera(0, camera);
-
-if (!view_get_visible(0))
-{
-    view_set_visible(0, true);
-}
+//camera_set_view_size(CAMERA, view_wport[0], view_hport[0]);
