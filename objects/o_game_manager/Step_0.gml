@@ -52,12 +52,14 @@ else if room = Board {
 						instance_destroy(o_prompt);
 						game_stage = stage.counting;
 						instance_activate_object(o_finalize_game_button);
+						o_finalize_game_button.visible = true;
+
 					}
 				}
 			}
 		}
 	}	else if game_stage = stage.end_of_game {
-		
+		//display_score();
 	}
 	
 	if number_of_passes > 1 and !instance_exists(o_prompt) {

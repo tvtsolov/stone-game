@@ -34,8 +34,8 @@ if room == Board and BOARD_SIZE == 13 {
 
 	//window_set_size(CAM_W*WINDOW_SIZE, CAM_H*WINDOW_SIZE );
 	
-	var w_ = window_get_width();
-	var h_ = window_get_height();
+	//var w_ = window_get_width();
+	//var h_ = window_get_height();
 	
 	//window_set_size(w_*2, h_*2);
 }

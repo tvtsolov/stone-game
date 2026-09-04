@@ -59,4 +59,11 @@ if room = Board {
 		
 	}
 
+if o_game_manager.game_stage = stage.end_of_game {
+	display_score();
+	instance_activate_object(o_new_game_button);
+	o_new_game_button.visible = true;
+}
+
+
 }

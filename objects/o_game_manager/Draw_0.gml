@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description 
 // You can write your code in this editor
 
 
@@ -13,6 +13,3 @@ if room = Board {
 	
 }
 
-if o_game_manager.game_stage = stage.end_of_game {
-	display_score();
-}

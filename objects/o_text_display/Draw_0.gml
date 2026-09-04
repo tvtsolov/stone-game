@@ -42,8 +42,8 @@ switch (room) {
 		}
 
 		font_enable_effects(Font_1, false);
-		var y_offset_row1 = 54;
-		var y_offset_row2 = y_offset_row1*2+20;
+		var y_offset_row1 = 130;
+		var y_offset_row2 = y_offset_row1 + 40;
 
 		//black
 		//draw_sprite_ext(s_stone, 0 ,x+15, y+y_offset_row1+5, .3, .3, 0, c_white, 1 );
