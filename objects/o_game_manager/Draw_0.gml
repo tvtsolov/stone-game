@@ -10,6 +10,5 @@ if room = Board {
 	//draw_sprite_tiled_ext(s_board_wood_plain, 0, x, y, 2, 2, c_white, 1);
 	
 	draw_sprite(board_sprite, 0, global.board_start_coordinates, global.board_start_coordinates);
-	
 }
 

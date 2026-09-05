@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"save_current_state_to_history",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Updaters",
+    "path":"folders/Scripts/Updaters.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

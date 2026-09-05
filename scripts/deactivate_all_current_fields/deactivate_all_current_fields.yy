@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"deactivate_all_current_fields",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Deactivators",
+    "path":"folders/Scripts/Deactivators.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

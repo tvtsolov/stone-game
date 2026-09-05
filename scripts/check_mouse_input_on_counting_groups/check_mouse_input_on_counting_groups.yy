@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"check_mouse_input_on_counting_groups",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Checkers",
+    "path":"folders/Scripts/Checkers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

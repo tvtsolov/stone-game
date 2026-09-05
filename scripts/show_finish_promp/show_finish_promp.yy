@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"show_finish_promp",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"PopUps",
+    "path":"folders/Scripts/PopUps.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"draw_collisionmask",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"PopUps",
+    "path":"folders/Scripts/PopUps.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

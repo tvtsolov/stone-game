@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"display_score",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"PopUps",
+    "path":"folders/Scripts/PopUps.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"activate_state",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Activators",
+    "path":"folders/Scripts/Activators.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

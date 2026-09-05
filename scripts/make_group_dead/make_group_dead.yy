@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"make_group_dead",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Setters",
+    "path":"folders/Scripts/Setters.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

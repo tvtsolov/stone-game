@@ -13,9 +13,10 @@ function clear_board(){
 	}
 
 	array_resize(global.groups, 0);
+	array_resize(global.linked_groups, 0);
+	array_resize(global.empty_zones, 0);
 	
-	
-	//global.board_states_history = [];
+	//clear global.board_states_history
 	var hist = global.board_states_history;
 	size = array_length(hist);
 	
@@ -35,13 +36,22 @@ function clear_board(){
 		array_resize(global.board_states_history[i].state_groups, 0);
 	}
 	array_resize(hist, 0);
+	
+	
 	with(o_stone){
 		instance_destroy();	
 	}
+	
 	
 	show_debug_message(instance_number(o_stone));
 	show_debug_message(instance_number(o_field));
 	
 	global.black_stones_hostiges = 0;
 	global.white_stones_hostiges = 0;
+	
+	with (o_game_manager) {
+		finalized = false;
+		counting_finished	= false;
+		negotiation_phase	= false;
+	}
 }
