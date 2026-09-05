@@ -1,7 +1,7 @@
 
 
 
-if not pressed {
+if not pressed  {
 	image_speed = 1;
 	image_index = 0;
 	pressed = true;

@@ -19,7 +19,6 @@ function get_score(){
 	}
 	
 	
-	//TODO add dead groups
 	
 
 		var groups			= global.groups;

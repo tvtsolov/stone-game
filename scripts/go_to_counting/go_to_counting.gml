@@ -30,7 +30,7 @@ function go_to_counting(){
 
 		draw_surrounded_empty_fields = true;
 		counting_finished = true;
-		// TODO keep drawing them like this
+
 	} else {
 		activate_all_current_fields();
 		// now the field objects can check if the game_stage is counting and allow for the selection and change of dead groups

@@ -156,7 +156,7 @@ function State(player_, board_, groups_) constructor
 			
 				temp_field.stone.group_ = temp_group;
 
-			temp_fields[ii] = temp_field;
+			temp_fields[ii] = temp_field; //TODO  bug after pressing pass and getting back to the game
 		}
 		temp_groups[i] = temp_group;
 	}

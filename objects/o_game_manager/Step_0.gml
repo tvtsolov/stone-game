@@ -45,7 +45,8 @@ else if room = Board {
 						instance_destroy(o_prompt);
 						number_of_passes = 0;
 						game_stage = stage.playing;
-						instance_activate_layer("fields");
+						activate_all_current_fields();
+						show_fields();
 						exit;
 					} else if but_.action = "finish" {
 						number_of_passes = 0;
