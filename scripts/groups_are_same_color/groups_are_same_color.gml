@@ -17,7 +17,8 @@ function groups_are_same_color(arr_groups){
 	if size > 0 {
 		return result;
 	} else {
-		return false;
 		show_debug_message("ERROR: The passed array is empty");
+		return false;
+		
 	}
 }
