@@ -13,9 +13,11 @@ URL:
 Rules of Go:
 In case you are not familiar with the rules of the game you can familiarize yourself with them with any of these resources:
 
-[KaTeX](https://khan.github.io/KaTeX/):
-[KaTeX](https://khan.github.io/KaTeX/):
-[KaTeX](https://khan.github.io/KaTeX/):
+[KaTeX](https://khan.github.io/KaTeX/)
+
+[Mermaid](https://mermaidjs.github.io/)
+
+
 https://en.wikipedia.org/wiki/Rules_of_Go
 https://www.youtube.com/playlist?list=PL4DLlaT_bvDG5y6WSfXU8cQsTsb4o3YnT
 https://online-go.com/learn-to-play-go
