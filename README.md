@@ -26,8 +26,52 @@ URL:
 
 
 ## Menu
+
 You can choose what is the board size you want to play on. The available options are the standard sizes, where the 19x19 is not completed.
 
 
-
 ![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Capture.PNG)
+
+## Playing a match
+
+Both players can play on the same computer taking turns. The player who's turn is is displayed on the right side, also hovering the mouse over the empty board displays the
+stone that is about to be placed, which hints at the current player's color. First are black. If he white wants to give an advantage, they can Pass their turn by clicking the Pass button.
+
+![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Capture_empty_board.PNG)
+
+The number of hostages taken during the game are shown on the right.
+
+![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Capture3.PNG)
+
+Once both players have clicked Pass a prompt is shows asking if the game should go into counting the result.
+
+![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Capture4.PNG)
+
+If you select YES, the Negotiation and Counting Phase starts.
+
+## Negotiation and Counting Phase
+
+The dead groups and stones are semi transparent. Disputed area is marked with a green X. And surrounded area owned by one color/player is marked with a square of the color that has managed to effectively surround it.
+
+At this phase the players can negotiate if a group is dead or alive by changing the groups' state by clicking it with the mouse. The area that is currently hovered over with the mouse pointer is highlighted in green.
+
+![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Captur5.PNG)
+![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Captur6.PNG)
+
+Clicking on the group changes it state from dead to alive and vice versa. This changes the end result in the Counting phase. 
+
+## End game and result
+
+To go into end game and see the result of the match you need to click FINALIZE. This displays the result.
+
+![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Capture7.PNG)
+
+
+
+## Notes
+
+I didn't use AI for any part of the creation of this project. 
+
+
+
+
