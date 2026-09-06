@@ -9,8 +9,9 @@ In case you are not familiar with the rules of the game you can familiarize your
 
 
 🌐 [Wikipedia](https://en.wikipedia.org/wiki/Rules_of_Go)
-/n
+
 📺 [YouTube](https://www.youtube.com/playlist?list=PL4DLlaT_bvDG5y6WSfXU8cQsTsb4o3YnT) 
+
 ⚪ [online-go.com](https://online-go.com/learn-to-play-go)
  
 
@@ -23,7 +24,10 @@ Option 1 > Install GameMaker and run the project from there after you clone the 
 Option 2 > the project is uploaded on the public GameMaker servers here:
 URL:
 
-## Menu
-You can choose what is the board size you want to play on. 
 
-![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/go9x9.PNG)
+## Menu
+You can choose what is the board size you want to play on. The available options are the standard sizes, where the 19x19 is not completed.
+
+
+
+![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Capture.PNG)
