@@ -58,7 +58,7 @@ At this phase the players can negotiate if a group is dead or alive by changing 
 ![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Captur5.PNG)
 
 [//]: # (comment)
-
+##
 
 ![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Captur6.PNG)
 
