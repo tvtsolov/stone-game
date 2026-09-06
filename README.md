@@ -56,7 +56,7 @@ The dead groups and stones are semi transparent. Disputed area is marked with a 
 At this phase the players can negotiate if a group is dead or alive by changing the groups' state by clicking it with the mouse. The area that is currently hovered over with the mouse pointer is highlighted in green.
 
 ![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Captur5.PNG)
-
+[comment]: <> (This is a comment, it will not be included)
 ![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Captur6.PNG)
 
 Clicking on the group changes it state from dead to alive and vice versa. This changes the end result in the Counting phase. 
