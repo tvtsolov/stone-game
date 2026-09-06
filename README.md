@@ -18,9 +18,9 @@ In case you are not familiar with the rules of the game you can familiarize your
 [Mermaid](https://mermaidjs.github.io/)
 
 
-[Wikipedia](https://en.wikipedia.org/wiki/Rules_of_Go)
-:yt:[YouTube](https://www.youtube.com/playlist?list=PL4DLlaT_bvDG5y6WSfXU8cQsTsb4o3YnT)
-[online-go.com](https://online-go.com/learn-to-play-go)
+🌐[Wikipedia](https://en.wikipedia.org/wiki/Rules_of_Go)
+📺[YouTube](https://www.youtube.com/playlist?list=PL4DLlaT_bvDG5y6WSfXU8cQsTsb4o3YnT) 
+⚪[online-go.com](https://online-go.com/learn-to-play-go)
  
 First screen:
 ## Menu
