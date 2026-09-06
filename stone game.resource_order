@@ -113,6 +113,7 @@
     {"name":"snd_stone1_2","order":2,"path":"sounds/snd_stone1_2/snd_stone1_2.yy",},
     {"name":"snd_stone1_3","order":3,"path":"sounds/snd_stone1_3/snd_stone1_3.yy",},
     {"name":"snd_stone1_4","order":4,"path":"sounds/snd_stone1_4/snd_stone1_4.yy",},
+    {"name":"s_bamboo_bg","order":25,"path":"sprites/s_bamboo_bg/s_bamboo_bg.yy",},
     {"name":"s_board_9x9","order":1,"path":"sprites/s_board_9x9/s_board_9x9.yy",},
     {"name":"s_board_wood_plain","order":2,"path":"sprites/s_board_wood_plain/s_board_wood_plain.yy",},
     {"name":"s_button_board_sizes","order":1,"path":"sprites/s_button_board_sizes/s_button_board_sizes.yy",},

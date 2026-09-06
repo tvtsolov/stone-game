@@ -158,6 +158,7 @@
     {"id":{"name":"snd_stone1_2","path":"sounds/snd_stone1_2/snd_stone1_2.yy",},},
     {"id":{"name":"snd_stone1_3","path":"sounds/snd_stone1_3/snd_stone1_3.yy",},},
     {"id":{"name":"snd_stone1_4","path":"sounds/snd_stone1_4/snd_stone1_4.yy",},},
+    {"id":{"name":"s_bamboo_bg","path":"sprites/s_bamboo_bg/s_bamboo_bg.yy",},},
     {"id":{"name":"s_board_13x13","path":"sprites/s_board_13x13/s_board_13x13.yy",},},
     {"id":{"name":"s_board_9x9","path":"sprites/s_board_9x9/s_board_9x9.yy",},},
     {"id":{"name":"s_board_sizes_text_menu","path":"sprites/s_board_sizes_text_menu/s_board_sizes_text_menu.yy",},},

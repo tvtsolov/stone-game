@@ -1,7 +1,7 @@
 draw_self();
 
 if group_.is_dead {
-	image_alpha = .8;
+	image_alpha = .5;
 } else {
 	image_alpha = 1;
 }
