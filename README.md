@@ -29,6 +29,7 @@ URL:
 
 You can choose what is the board size you want to play on. The available options are the standard sizes, where the 19x19 is not completed.
 
+![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Captur5.PNG)
 
 ![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Capture.PNG)
 
