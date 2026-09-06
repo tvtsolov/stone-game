@@ -31,7 +31,7 @@ You can choose what is the board size you want to play on. The available options
 
 ![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Captur5.PNG)
 
-![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Capture.PNG)
+![image](https://github.com/tvtsolov/stone-game/blob/main/screenshots/Capture6.PNG)
 
 ## Playing a match
 
